@@ -1,15 +1,20 @@
-h1, h3 {
+h2 {
     letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 
-p {
-    line-height: 1.7;
+.box {
+    transition: transform 0.3s ease;
 }
 
-.section {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+.box:hover {
+    transform: translateY(-5px);
 }
 
-img {
+.gallery-box img {
     border-radius: 8px;
+}
+
+table tr:hover {
+    background-color: #222;
 }
