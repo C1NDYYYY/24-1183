@@ -7,22 +7,29 @@
     <!-- INTERNAL CSS -->
     <style>
         body {
-            background-color: #1e1e1e; /* Not white */
+            background-color: #1f1f1f; /* Not white */
             font-family: Arial, sans-serif;
-            color: white;
+            color: #ffffff;
         }
 
-        .container {
-            width: 80%;
+        .main-container {
+            width: 85%;
             margin: auto;
             text-align: center; /* Centered content */
         }
 
-        .image-box {
-            width: 180px;
-            padding: 10px;
-            background-color: #333;
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #2e2e2e;
+            border-radius: 10px;
+        }
+
+        .image-container {
             display: inline-block;
+            width: 180px;
+            background-color: #3a3a3a;
+            padding: 10px;
             margin: 10px;
             border-radius: 10px;
         }
@@ -30,8 +37,7 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
-            background-color: #2b2b2b;
+            background-color: #333;
         }
 
         th, td {
@@ -46,80 +52,104 @@
 
 <body>
 
-<div class="container">
+<div class="main-container">
 
-    <h1 style="color: #ff6347;">Get Ripped Gym</h1> <!-- INLINE CSS -->
-    <h3>Best Body Transformations 2026</h3>
-
-    <p>
-        <b>Strength is built when discipline becomes your daily habit.</b><br>
-        <i>Consistency beats motivation every single time.</i><br>
-        <u>Your body achieves what your mind believes.</u><br>
-        Founded on 12<sup>th</sup> January 2022<br>
-        Hydration like H<sub>2</sub>O fuels performance<br>
-        <mark style="background-color: yellow;">Train smart, lift heavy, recover well.</mark>
-    </p>
-
-    <blockquote>
-        Success in fitness comes from showing up even when it’s hard.
-    </blockquote>
-
-    <hr>
-
-    <!-- IMAGE CONTAINERS -->
-    <h3>Gym Gallery</h3>
-
-    <div class="image-box">
-        <img src="images/img1.jpg" width="150">
+    <!-- HEADER SECTION -->
+    <div class="section">
+        <h1 style="color: #ff6347;">Get Ripped Gym</h1> <!-- INLINE CSS -->
+        <h3>Best Body Transformations 2026</h3>
     </div>
 
-    <div class="image-box">
-        <img src="images/img2.jpg" width="150">
+    <!-- MOTIVATION SECTION -->
+    <div class="section">
+        <p><b>Strength is built when discipline becomes your daily habit.</b></p>
     </div>
 
-    <div class="image-box">
-        <img src="images/img3.jpg" width="150">
+    <!-- PHILOSOPHY SECTION -->
+    <div class="section">
+        <p>
+            <i>Consistency beats motivation every single time.</i><br>
+            <u>Your body achieves what your mind believes.</u>
+        </p>
     </div>
 
-    <div class="image-box">
-        <img src="images/img4.jpg" width="150">
+    <!-- ABOUT SECTION -->
+    <div class="section">
+        <p>Founded on 12<sup>th</sup> January 2022</p>
     </div>
 
-    <div class="image-box">
-        <img src="images/img5.jpg" width="150">
+    <!-- HEALTH SECTION -->
+    <div class="section">
+        <p>Hydration like H<sub>2</sub>O fuels performance</p>
     </div>
 
-    <hr>
+    <!-- HIGHLIGHT SECTION -->
+    <div class="section">
+        <p><mark style="background-color: yellow;">Train smart, lift heavy, recover well.</mark></p>
+    </div>
 
-    <!-- TABLE -->
-    <h3>Weekly Training Schedule</h3>
+    <!-- IMAGE GALLERY -->
+    <div class="section">
+        <h3>Gym Gallery</h3>
 
-    <table>
-        <tr>
-            <th>Day</th>
-            <th>Workout</th>
-            <th>Trainer</th>
-            <th>Time</th>
-        </tr>
-        <tr>
-            <td>Monday</td>
-            <td>Chest</td>
-            <td>Alex</td>
-            <td>6 AM</td>
-        </tr>
-        <tr>
-            <td>Tuesday</td>
-            <td>Back</td>
-            <td>Joy</td>
-            <td>7 AM</td>
-        </tr>
-        <tr>
-            <td>Wednesday</td>
-            <td>Legs</td>
-            <td>Mark</td>
-            <td>6 PM</td>
-        </tr>
-    </table>
+        <div class="image-container">
+            <img src="images/img1.jpg" width="150">
+        </div>
+
+        <div class="image-container">
+            <img src="images/img2.jpg" width="150">
+        </div>
+
+        <div class="image-container">
+            <img src="images/img3.jpg" width="150">
+        </div>
+
+        <div class="image-container">
+            <img src="images/img4.jpg" width="150">
+        </div>
+
+        <div class="image-container">
+            <img src="images/img5.jpg" width="150">
+        </div>
+    </div>
+
+    <!-- TABLE SECTION -->
+    <div class="section">
+        <h3>Weekly Training Schedule</h3>
+
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Workout</th>
+                <th>Trainer</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Chest</td>
+                <td>Alex</td>
+                <td>6 AM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Back</td>
+                <td>Joy</td>
+                <td>7 AM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Legs</td>
+                <td>Mark</td>
+                <td>6 PM</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="section">
+        <p>&copy; 2026 Get Ripped Gym</p>
+        <p>"Train harder. Get stronger. Get ripped."</p>
+    </div>
 
 </div>
 
