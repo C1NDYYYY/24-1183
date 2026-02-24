@@ -7,42 +7,65 @@
     <!-- INTERNAL CSS -->
     <style>
         body {
-            background-color: #1f1f1f; /* Not white */
-            font-family: Arial, sans-serif;
-            color: #ffffff;
+            background: linear-gradient(to right, #111, #2b2b2b);
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #f2f2f2;
+            margin: 0;
         }
 
-        .main-container {
-            width: 85%;
+        .wrapper {
+            width: 90%;
             margin: auto;
-            text-align: center; /* Centered content */
+            text-align: center;
+        }
+
+        .hero {
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
         }
 
         .section {
-            margin: 30px 0;
-            padding: 20px;
-            background-color: #2e2e2e;
-            border-radius: 10px;
+            margin: 40px 0;
+            padding: 30px;
+            background-color: #1c1c1c;
+            border-radius: 15px;
         }
 
-        .image-container {
-            display: inline-block;
-            width: 180px;
-            background-color: #3a3a3a;
+        .split {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 280px;
+            margin: 15px;
+            padding: 20px;
+            background-color: #262626;
+            border-radius: 12px;
+        }
+
+        .gallery-box {
+            width: 170px;
             padding: 10px;
+            background-color: #000;
             margin: 10px;
             border-radius: 10px;
+            display: inline-block;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            background-color: #333;
+            background-color: #111;
         }
 
         th, td {
-            border: 1px solid #555;
-            padding: 10px;
+            padding: 12px;
+            border: 1px solid #444;
         }
     </style>
 
@@ -52,70 +75,58 @@
 
 <body>
 
-<div class="main-container">
+<div class="wrapper">
 
-    <!-- HEADER SECTION -->
-    <div class="section">
-        <h1 style="color: #ff6347;">Get Ripped Gym</h1> <!-- INLINE CSS -->
-        <h3>Best Body Transformations 2026</h3>
+    <!-- HERO / HEADER -->
+    <div class="hero">
+        <h1 style="color:#ff4d4d;">Get Ripped Gym</h1> <!-- INLINE CSS -->
+        <p style="letter-spacing:3px;">Best Body Transformations 2026</p>
     </div>
 
-    <!-- MOTIVATION SECTION -->
-    <div class="section">
-        <p><b>Strength is built when discipline becomes your daily habit.</b></p>
-    </div>
+    <!-- MOTIVATION ROW -->
+    <div class="section split">
+        <div class="box">
+            <b>Strength is built when discipline becomes your daily habit.</b>
+        </div>
 
-    <!-- PHILOSOPHY SECTION -->
-    <div class="section">
-        <p>
-            <i>Consistency beats motivation every single time.</i><br>
+        <div class="box">
+            <i>Consistency beats motivation every single time.</i>
+        </div>
+
+        <div class="box">
             <u>Your body achieves what your mind believes.</u>
-        </p>
-    </div>
-
-    <!-- ABOUT SECTION -->
-    <div class="section">
-        <p>Founded on 12<sup>th</sup> January 2022</p>
-    </div>
-
-    <!-- HEALTH SECTION -->
-    <div class="section">
-        <p>Hydration like H<sub>2</sub>O fuels performance</p>
-    </div>
-
-    <!-- HIGHLIGHT SECTION -->
-    <div class="section">
-        <p><mark style="background-color: yellow;">Train smart, lift heavy, recover well.</mark></p>
-    </div>
-
-    <!-- IMAGE GALLERY -->
-    <div class="section">
-        <h3>Gym Gallery</h3>
-
-        <div class="image-container">
-            <img src="images/img1.jpg" width="150">
-        </div>
-
-        <div class="image-container">
-            <img src="images/img2.jpg" width="150">
-        </div>
-
-        <div class="image-container">
-            <img src="images/img3.jpg" width="150">
-        </div>
-
-        <div class="image-container">
-            <img src="images/img4.jpg" width="150">
-        </div>
-
-        <div class="image-container">
-            <img src="images/img5.jpg" width="150">
         </div>
     </div>
 
-    <!-- TABLE SECTION -->
+    <!-- INFO SECTION -->
+    <div class="section split">
+        <div class="box">
+            Founded on 12<sup>th</sup> January 2022
+        </div>
+
+        <div class="box">
+            Hydration like H<sub>2</sub>O fuels performance
+        </div>
+
+        <div class="box">
+            <mark style="background-color:gold;">Train smart, lift heavy, recover well.</mark>
+        </div>
+    </div>
+
+    <!-- GALLERY -->
     <div class="section">
-        <h3>Weekly Training Schedule</h3>
+        <h2>Gym Gallery</h2>
+
+        <div class="gallery-box"><img src="images/img1.jpg" width="150"></div>
+        <div class="gallery-box"><img src="images/img2.jpg" width="150"></div>
+        <div class="gallery-box"><img src="images/img3.jpg" width="150"></div>
+        <div class="gallery-box"><img src="images/img4.jpg" width="150"></div>
+        <div class="gallery-box"><img src="images/img5.jpg" width="150"></div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="section">
+        <h2>Weekly Training Schedule</h2>
 
         <table>
             <tr>
@@ -148,7 +159,7 @@
     <!-- FOOTER -->
     <div class="section">
         <p>&copy; 2026 Get Ripped Gym</p>
-        <p>"Train harder. Get stronger. Get ripped."</p>
+        <p><em>Train harder. Get stronger. Get ripped.</em></p>
     </div>
 
 </div>
