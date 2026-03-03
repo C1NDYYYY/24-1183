@@ -6,163 +6,70 @@
 
     <!-- INTERNAL CSS -->
     <style>
-        body {
-            background: linear-gradient(to right, #111, #2b2b2b);
-            font-family: "Segoe UI", Arial, sans-serif;
-            color: #f2f2f2;
-            margin: 0;
+        /* Paragraph 2 - Internal CSS */
+        #discipline-text {
+            color: orange;
+            font-weight: bold;
         }
 
-        .wrapper {
-            width: 90%;
-            margin: auto;
-            text-align: center;
+        /* Highlight 2 - Internal CSS */
+        #core-value {
+            color: green;
         }
 
-        .hero {
-            padding: 60px 20px;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-        }
-
-        .section {
-            margin: 40px 0;
-            padding: 30px;
-            background-color: #1c1c1c;
-            border-radius: 15px;
-        }
-
-        .split {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .box {
-            width: 280px;
-            margin: 15px;
-            padding: 20px;
-            background-color: #262626;
-            border-radius: 12px;
-        }
-
-        .gallery-box {
-            width: 170px;
-            padding: 10px;
-            background-color: #000;
-            margin: 10px;
-            border-radius: 10px;
-            display: inline-block;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #111;
-        }
-
-        th, td {
-            padding: 12px;
-            border: 1px solid #444;
+        /* Building 2 - Internal CSS */
+        #training-programs {
+            color: brown;
         }
     </style>
 
     <!-- EXTERNAL CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="wrapper">
+    <!-- PARAGRAPHS -->
+    <p style="color: blue; font-style: italic;">
+        Strength is built when discipline becomes a daily habit, not when motivation feels convenient.
+    </p>
 
-    <!-- HERO / HEADER -->
-    <div class="hero">
-        <h1 style="color:#ff4d4d;">Get Ripped Gym</h1> <!-- INLINE CSS -->
-        <p style="letter-spacing:3px;">Best Body Transformations 2026</p>
-    </div>
+    <p id="discipline-text">
+        At Get Ripped Gym, we focus on structured training, consistency, and accountability to deliver real, visible results.
+    </p>
 
-    <!-- MOTIVATION ROW -->
-    <div class="section split">
-        <div class="box">
-            <b>Strength is built when discipline becomes your daily habit.</b>
-        </div>
+    <p class="community">
+        Our community is built around hard work, resilience, and supporting every member through their fitness journey.
+    </p>
 
-        <div class="box">
-            <i>Consistency beats motivation every single time.</i>
-        </div>
+    <hr>
 
-        <div class="box">
-            <u>Your body achieves what your mind believes.</u>
-        </div>
-    </div>
+    <!-- H1 HIGHLIGHTS -->
+    <h1 style="color: red;">
+        Transform Your Body
+    </h1>
 
-    <!-- INFO SECTION -->
-    <div class="section split">
-        <div class="box">
-            Founded on 12<sup>th</sup> January 2022
-        </div>
+    <h1 id="core-value">
+        Discipline Over Motivation
+    </h1>
 
-        <div class="box">
-            Hydration like H<sub>2</sub>O fuels performance
-        </div>
+    <h1 class="brand-vision">
+        Built for Real Results
+    </h1>
 
-        <div class="box">
-            <mark style="background-color:gold;">Train smart, lift heavy, recover well.</mark>
-        </div>
-    </div>
+    <hr>
 
-    <!-- GALLERY -->
-    <div class="section">
-        <h2>Gym Gallery</h2>
+    <!-- H3 BUILDINGS / SECTIONS -->
+    <h3 style="color: purple;">
+        Strength & Conditioning
+    </h3>
 
-        <div class="gallery-box"><img src="images/img1.jpg" width="150"></div>
-        <div class="gallery-box"><img src="images/img2.jpg" width="150"></div>
-        <div class="gallery-box"><img src="images/img3.jpg" width="150"></div>
-        <div class="gallery-box"><img src="images/img4.jpg" width="150"></div>
-        <div class="gallery-box"><img src="images/img5.jpg" width="150"></div>
-    </div>
+    <h3 id="training-programs">
+        Personalized Training Programs
+    </h3>
 
-    <!-- TABLE -->
-    <div class="section">
-        <h2>Weekly Training Schedule</h2>
-
-        <table>
-            <tr>
-                <th>Day</th>
-                <th>Workout</th>
-                <th>Trainer</th>
-                <th>Time</th>
-            </tr>
-            <tr>
-                <td>Monday</td>
-                <td>Chest</td>
-                <td>Alex</td>
-                <td>6 AM</td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
-                <td>Back</td>
-                <td>Joy</td>
-                <td>7 AM</td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>Legs</td>
-                <td>Mark</td>
-                <td>6 PM</td>
-            </tr>
-        </table>
-    </div>
-
-    <!-- FOOTER -->
-    <div class="section">
-        <p>&copy; 2026 Get Ripped Gym</p>
-        <p><em>Train harder. Get stronger. Get ripped.</em></p>
-    </div>
-
-</div>
+    <h3 class="nutrition-coaching">
+        Nutrition & Recovery Coaching
+    </h3>
 
 </body>
 </html>
