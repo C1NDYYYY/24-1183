@@ -1,20 +1,15 @@
-h2 {
-    letter-spacing: 2px;
-    margin-bottom: 20px;
+/* Paragraph 3 */
+.community {
+    color: purple;
+    text-decoration: underline;
 }
 
-.box {
-    transition: transform 0.3s ease;
+/* Highlight 3 */
+.brand-vision {
+    color: navy;
 }
 
-.box:hover {
-    transform: translateY(-5px);
-}
-
-.gallery-box img {
-    border-radius: 8px;
-}
-
-table tr:hover {
-    background-color: #222;
+/* Building 3 */
+.nutrition-coaching {
+    color: darkgreen;
 }
