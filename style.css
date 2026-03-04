@@ -1,27 +1,18 @@
-/* Paragraph 3 */
-.community {
+.section-three {
+    background-color: #e6e6fa;
+    padding: 20px;
+}
+
+/* External CSS requirements */
+.para-external {
     color: purple;
     text-decoration: underline;
 }
 
-/* Highlight 3 */
-.brand-vision {
-    color: navy;
+.highlight-external {
+    color: darkblue;
 }
 
-/* Building 3 */
-.nutrition-coaching {
-    color: darkgreen;
-}
-
-/* Images styling */
-img {
-    margin: 10px;
-    border-radius: 10px;
-}
-
-/* Video styling */
-iframe {
-    margin: 15px 0;
-    border: 2px solid #333;
+.building-external {
+    color: teal;
 }
