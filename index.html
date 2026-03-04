@@ -2,100 +2,137 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Assignment</title>
+<title>Ultimate Fitness Gym</title>
 
+<!-- External CSS -->
 <link rel="stylesheet" href="style.css">
 
+<!-- Internal CSS -->
 <style>
-body{
-    font-family: Arial;
-    background-color:#f2f2f2;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
 }
 
-/* INTERNAL CSS */
-.internal-para{
+/* Internal CSS */
+.section2 {
+    background-color: #fff0cc;
+    padding: 30px;
+}
+
+.internal-para {
     color: orange;
     font-weight: bold;
 }
-.internal-h1{
+
+.internal-h1 {
     color: green;
+    text-align: center;
 }
-.internal-h3{
+
+.internal-h3 {
     color: brown;
 }
 
-.section2{
-    background-color:#fff0cc;
-    padding:20px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-table, th, td{
-    border:1px solid black;
-    border-collapse: collapse;
-    padding:10px;
+th, td {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+}
+
+img {
+    margin: 10px 0;
+    border-radius: 10px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- SECTION 1 -->
-<div style="background-color:#d9edf7; padding:20px;">
-<h1 style="color:red;">Highlight 1 (Inline)</h1>
-
-<p style="color:blue; font-style:italic;">
-Paragraph styled with inline CSS
+<!-- ================= HERO / SECTION 1 ================= -->
+<div style="background-color:#d9edf7; padding:40px; text-align:center;">
+<h1 style="color:red; font-size:36px;">Ultimate Fitness Gym</h1>
+<p style="color:blue; font-style:italic; font-size:18px;">
+Get fit, stay strong, transform your life!
 </p>
 
-<h3 style="color:purple;">Building 1 (Inline)</h3>
+<h3 style="color:purple;">Featured Training</h3>
 
-<div><img src="img1.jpg" width="150"></div>
-<div><img src="img2.jpg" width="150"></div>
+<!-- Images of gym/workouts -->
+<div><img src="img1.jpg" width="250" alt="Workout 1"></div>
+<div><img src="img2.jpg" width="250" alt="Workout 2"></div>
 
-<iframe width="300" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
-<iframe width="300" height="200" src="https://www.youtube.com/embed/9bZkp7q19f0"></iframe>
+<!-- YouTube Videos -->
+<iframe width="400" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+<iframe width="400" height="250" src="https://www.youtube.com/embed/9bZkp7q19f0" allowfullscreen></iframe>
 </div>
 
-<!-- SECTION 2 -->
+<!-- ================= WORKOUT ROUTINE / SECTION 2 ================= -->
 <div class="section2">
-<h1 class="internal-h1">Highlight 2 (Internal)</h1>
+<h1 class="internal-h1">Workout Routine</h1>
 
 <p class="internal-para">
-Paragraph styled with internal CSS
+Check out our weekly workout plan for all levels!
 </p>
 
-<h3 class="internal-h3">Building 2 (Internal)</h3>
+<h3 class="internal-h3">Weekly Schedule</h3>
 
-<div><img src="img3.jpg" width="150"></div>
-<div><img src="img4.jpg" width="150"></div>
-
+<!-- Table: Workout Routine -->
 <table>
 <tr>
-<th>Name</th>
-<th>Course</th>
-<th>Year</th>
+<th>Day</th>
+<th>Workout</th>
+<th>Reps/Sets</th>
 </tr>
 <tr>
-<td>Cindy</td>
-<td>IT</td>
-<td>2</td>
+<td>Monday</td>
+<td>Chest & Triceps</td>
+<td>Bench Press 4x12, Dips 3x15</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>Back & Biceps</td>
+<td>Pull-ups 4x10, Curls 3x12</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>Legs & Abs</td>
+<td>Squats 4x15, Crunches 3x20</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>Shoulders & Traps</td>
+<td>Shoulder Press 4x12, Shrugs 3x15</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>Full Body HIIT</td>
+<td>Circuit 5 rounds, 45s each</td>
 </tr>
 </table>
 </div>
 
-<!-- SECTION 3 -->
+<!-- ================= VIDEO TIPS / SECTION 3 ================= -->
 <div class="section3">
-<h1 class="external-h1">Highlight 3 (External)</h1>
+<h1 class="external-h1">Fitness Tips</h1>
 
 <p class="external-para">
-Paragraph styled with external CSS
+Watch our top trainers demonstrate proper form and routines.
 </p>
 
-<h3 class="external-h3">Building 3 (External)</h3>
+<h3 class="external-h3">Featured Videos</h3>
 
-<div><img src="img5.jpg" width="150"></div>
+<div><img src="img5.jpg" width="250" alt="Trainer"></div>
 
-<iframe width="300" height="200" src="https://www.youtube.com/embed/l482T0yNkeo"></iframe>
+<!-- YouTube Video -->
+<iframe width="400" height="250" src="https://www.youtube.com/embed/l482T0yNkeo" allowfullscreen></iframe>
 </div>
 
 </body>
