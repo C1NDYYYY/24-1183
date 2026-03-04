@@ -1,18 +1,24 @@
-.section3 {
-    background-color: #e6e6fa;
-    padding: 30px;
-}
-
 /* EXTERNAL CSS */
-.external-para {
-    color: purple;
-    text-decoration: underline;
-    font-size: 16px;
-}
-.external-h1 {
+
+/* Brand vision headings */
+.brand-vision {
     color: darkblue;
     text-align: center;
 }
-.external-h3 {
+
+/* Nutrition coaching heading */
+.nutrition-coaching {
     color: teal;
+}
+
+/* Community paragraph styling */
+.community {
+    color: darkred;
+    font-style: italic;
+}
+
+/* Workout gallery images */
+.gallery-img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
