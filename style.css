@@ -1,16 +1,18 @@
-.section3{
-    background-color:#e6e6fa;
-    padding:20px;
+.section3 {
+    background-color: #e6e6fa;
+    padding: 30px;
 }
 
 /* EXTERNAL CSS */
-.external-para{
+.external-para {
     color: purple;
     text-decoration: underline;
+    font-size: 16px;
 }
-.external-h1{
+.external-h1 {
     color: darkblue;
+    text-align: center;
 }
-.external-h3{
+.external-h3 {
     color: teal;
 }
