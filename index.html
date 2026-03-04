@@ -2,39 +2,62 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Ultimate Fitness Gym</title>
+<title>Get Ripped Gym</title>
 
 <!-- External CSS -->
 <link rel="stylesheet" href="style.css">
 
-<!-- Internal CSS -->
+<!-- INTERNAL CSS -->
 <style>
+/* Body styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
+    line-height: 1.6;
+    background-color: #f5f5f5;
 }
 
-/* Internal CSS */
-.section2 {
+/* Section styling */
+.section-hero {
+    background-color: #d9edf7;
+    padding: 40px;
+    text-align: center;
+}
+
+.section-gallery {
+    background-color: #e6f7ff;
+    padding: 30px;
+    text-align: center;
+}
+
+.section-videos {
+    background-color: #f0e6fa;
+    padding: 30px;
+    text-align: center;
+}
+
+.section-table {
     background-color: #fff0cc;
     padding: 30px;
 }
 
-.internal-para {
+/* Paragraph 2 */
+#discipline-text {
     color: orange;
     font-weight: bold;
 }
 
-.internal-h1 {
+/* Highlight 2 */
+#core-value {
     color: green;
-    text-align: center;
 }
 
-.internal-h3 {
+/* Section 2 */
+#training-programs {
     color: brown;
 }
 
+/* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -42,97 +65,133 @@ table {
 }
 
 th, td {
-    border: 1px solid black;
-    padding: 12px;
+    border: 1px solid #333;
+    padding: 10px;
     text-align: center;
 }
 
-img {
-    margin: 10px 0;
+th {
+    background-color: #222;
+    color: white;
+}
+
+td {
+    background-color: #eee;
+}
+
+/* Gallery images */
+.gallery-img {
+    width: 300px;
+    margin: 10px;
     border-radius: 10px;
 }
+
+/* Inline styling already applied on first paragraph and headings */
 </style>
 </head>
 
 <body>
 
-<!-- ================= HERO / SECTION 1 ================= -->
-<div style="background-color:#d9edf7; padding:40px; text-align:center;">
-<h1 style="color:red; font-size:36px;">Ultimate Fitness Gym</h1>
-<p style="color:blue; font-style:italic; font-size:18px;">
-Get fit, stay strong, transform your life!
-</p>
+<!-- ================= HERO SECTION ================= -->
+<div class="section-hero">
+    <p style="color: blue; font-style: italic;">
+        Strength is built when discipline becomes a daily habit, not when motivation feels convenient.
+    </p>
 
-<h3 style="color:purple;">Featured Training</h3>
+    <p id="discipline-text">
+        At Get Ripped Gym, we focus on structured training, consistency, and accountability to deliver real, visible results.
+    </p>
 
-<!-- Images of gym/workouts -->
-<div><img src="img1.jpg" width="250" alt="Workout 1"></div>
-<div><img src="img2.jpg" width="250" alt="Workout 2"></div>
+    <p class="community">
+        Our community is built around hard work, resilience, and supporting every member through their fitness journey.
+    </p>
 
-<!-- YouTube Videos -->
-<iframe width="400" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-<iframe width="400" height="250" src="https://www.youtube.com/embed/9bZkp7q19f0" allowfullscreen></iframe>
+    <hr>
+
+    <h1 style="color: red;">Transform Your Body</h1>
+    <h1 id="core-value">Discipline Over Motivation</h1>
+    <h1 class="brand-vision">Built for Real Results</h1>
+
+    <hr>
+
+    <h3 style="color: purple;">Strength & Conditioning</h3>
+    <h3 id="training-programs">Personalized Training Programs</h3>
+    <h3 class="nutrition-coaching">Nutrition & Recovery Coaching</h3>
 </div>
 
-<!-- ================= WORKOUT ROUTINE / SECTION 2 ================= -->
-<div class="section2">
-<h1 class="internal-h1">Workout Routine</h1>
-
-<p class="internal-para">
-Check out our weekly workout plan for all levels!
-</p>
-
-<h3 class="internal-h3">Weekly Schedule</h3>
-
-<!-- Table: Workout Routine -->
-<table>
-<tr>
-<th>Day</th>
-<th>Workout</th>
-<th>Reps/Sets</th>
-</tr>
-<tr>
-<td>Monday</td>
-<td>Chest & Triceps</td>
-<td>Bench Press 4x12, Dips 3x15</td>
-</tr>
-<tr>
-<td>Tuesday</td>
-<td>Back & Biceps</td>
-<td>Pull-ups 4x10, Curls 3x12</td>
-</tr>
-<tr>
-<td>Wednesday</td>
-<td>Legs & Abs</td>
-<td>Squats 4x15, Crunches 3x20</td>
-</tr>
-<tr>
-<td>Thursday</td>
-<td>Shoulders & Traps</td>
-<td>Shoulder Press 4x12, Shrugs 3x15</td>
-</tr>
-<tr>
-<td>Friday</td>
-<td>Full Body HIIT</td>
-<td>Circuit 5 rounds, 45s each</td>
-</tr>
-</table>
+<!-- ================= GALLERY SECTION ================= -->
+<div class="section-gallery">
+    <h2>Gallery</h2>
+    <img src="images/img1.jpg" alt="Gym workout 1" class="gallery-img">
+    <img src="images/img2.jpg" alt="Gym workout 2" class="gallery-img">
+    <img src="images/img3.jpg" alt="Gym workout 3" class="gallery-img">
+    <img src="images/img4.jpg" alt="Gym workout 4" class="gallery-img">
+    <img src="images/img5.jpg" alt="Gym workout 5" class="gallery-img">
+    <img src="images/img6.jpg" alt="Gym workout 6" class="gallery-img">
 </div>
 
-<!-- ================= VIDEO TIPS / SECTION 3 ================= -->
-<div class="section3">
-<h1 class="external-h1">Fitness Tips</h1>
+<!-- ================= VIDEOS SECTION ================= -->
+<div class="section-videos">
+    <h2>Workout Tutorials</h2>
 
-<p class="external-para">
-Watch our top trainers demonstrate proper form and routines.
-</p>
+    <iframe width="400" height="250" 
+        src="https://www.youtube.com/embed/d_JfJ-7XkO0" 
+        title="Workout Tutorial 1" frameborder="0" allowfullscreen></iframe>
 
-<h3 class="external-h3">Featured Videos</h3>
+    <iframe width="400" height="250" 
+        src="https://www.youtube.com/embed/UBMk30rjy0o" 
+        title="Workout Tutorial 2" frameborder="0" allowfullscreen></iframe>
 
-<div><img src="img5.jpg" width="250" alt="Trainer"></div>
+    <iframe width="400" height="250" 
+        src="https://www.youtube.com/embed/2pLT-olgUJs" 
+        title="Workout Tutorial 3" frameborder="0" allowfullscreen></iframe>
 
-<!-- YouTube Video -->
-<iframe width="400" height="250" src="https://www.youtube.com/embed/l482T0yNkeo" allowfullscreen></iframe>
+    <iframe width="400" height="250" 
+        src="https://www.youtube.com/embed/ZwHnYeC8Qck" 
+        title="Workout Tutorial 4" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!-- ================= TABLE SECTION ================= -->
+<div class="section-table">
+    <h2>Weekly Training Schedule</h2>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Morning</th>
+            <th>Afternoon</th>
+            <th>Evening</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Cardio</td>
+            <td>Strength Training</td>
+            <td>Yoga</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>HIIT</td>
+            <td>Core & Abs</td>
+            <td>Stretching</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Cardio</td>
+            <td>Strength Training</td>
+            <td>Nutrition Workshop</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>HIIT</td>
+            <td>Full Body</td>
+            <td>Yoga</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Cardio</td>
+            <td>Core & Abs</td>
+            <td>Recovery Session</td>
+        </tr>
+    </table>
 </div>
 
 </body>
