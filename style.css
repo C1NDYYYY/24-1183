@@ -1,18 +1,16 @@
-.section-three {
-    background-color: #e6e6fa;
-    padding: 20px;
+.section3{
+    background-color:#e6e6fa;
+    padding:20px;
 }
 
-/* External CSS requirements */
-.para-external {
+/* EXTERNAL CSS */
+.external-para{
     color: purple;
     text-decoration: underline;
 }
-
-.highlight-external {
+.external-h1{
     color: darkblue;
 }
-
-.building-external {
+.external-h3{
     color: teal;
 }
