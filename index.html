@@ -2,179 +2,125 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Get Ripped Gym</title>
+    <title>Web Assignment</title>
 
-    <!-- INTERNAL CSS -->
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
     <style>
-        /* Paragraph 2 */
-        #discipline-text {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Internal CSS requirements */
+        .para-internal {
             color: orange;
             font-weight: bold;
         }
 
-        /* Highlight 2 */
-        #core-value {
+        .highlight-internal {
             color: green;
         }
 
-        /* Section 2 */
-        #training-programs {
+        .building-internal {
             color: brown;
         }
 
-        /* Body styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-            background-color: #f5f5f5;
+        .section-two {
+            background-color: #fff0cc;
+            padding: 20px;
         }
 
-        hr {
-            margin: 30px 0;
-        }
-
-        /* Table styling */
         table {
-            width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
+            width: 100%;
+            margin-top: 20px;
         }
 
         table, th, td {
-            border: 1px solid #333;
+            border: 1px solid black;
         }
 
         th, td {
             padding: 10px;
             text-align: center;
         }
-
-        th {
-            background-color: #222;
-            color: white;
-        }
-
-        td {
-            background-color: #eee;
-        }
     </style>
-
-    <!-- EXTERNAL CSS -->
-    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- PARAGRAPHS -->
-    <p style="color: blue; font-style: italic;">
-        Strength is built when discipline becomes a daily habit, not when motivation feels convenient.
+<!-- ================= CONTENT SECTION 1 ================= -->
+<div style="background-color:#d9edf7; padding:20px;">
+    <h1 style="color:red;">Highlight 1 (Inline CSS)</h1>
+
+    <p style="color:blue; font-style:italic;">
+        Paragraph 1 styled using inline CSS
     </p>
 
-    <p id="discipline-text">
-        At Get Ripped Gym, we focus on structured training, consistency, and accountability to deliver real, visible results.
+    <h3 style="color:purple;">Building 1 (Inline CSS)</h3>
+
+    <!-- Image containers -->
+    <div><img src="img1.jpg" width="150"></div>
+    <div><img src="img2.jpg" width="150"></div>
+
+    <!-- YouTube Videos -->
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/9bZkp7q19f0" allowfullscreen></iframe>
+</div>
+
+<!-- ================= CONTENT SECTION 2 ================= -->
+<div class="section-two">
+    <h1 class="highlight-internal">Highlight 2 (Internal CSS)</h1>
+
+    <p class="para-internal">
+        Paragraph 2 styled using internal CSS
     </p>
 
-    <p class="community">
-        Our community is built around hard work, resilience, and supporting every member through their fitness journey.
-    </p>
+    <h3 class="building-internal">Building 2 (Internal CSS)</h3>
 
-    <hr>
+    <!-- Image containers -->
+    <div><img src="img3.jpg" width="150"></div>
+    <div><img src="img4.jpg" width="150"></div>
 
-    <!-- H1 HIGHLIGHTS -->
-    <h1 style="color: red;">
-        Transform Your Body
-    </h1>
-
-    <h1 id="core-value">
-        Discipline Over Motivation
-    </h1>
-
-    <h1 class="brand-vision">
-        Built for Real Results
-    </h1>
-
-    <hr>
-
-    <!-- H3 SECTIONS / BUILDINGS -->
-    <h3 style="color: purple;">
-        Strength & Conditioning
-    </h3>
-
-    <h3 id="training-programs">
-        Personalized Training Programs
-    </h3>
-
-    <h3 class="nutrition-coaching">
-        Nutrition & Recovery Coaching
-    </h3>
-
-    <hr>
-
-    <!-- IMAGES -->
-    <h2>Gallery</h2>
-    <img src="images/img1.jpg" alt="Gym workout 1" width="400">
-    <img src="images/img2.jpg" alt="Gym workout 2" width="400">
-    <img src="images/img3.jpg" alt="Gym workout 3" width="400">
-    <img src="images/img4.jpg" alt="Gym workout 4" width="400">
-    <img src="images/img5.jpg" alt="Gym workout 5" width="400">
-    <img src="images/img6.jpg" alt="Gym workout 6" width="400">
-
-    <hr>
-
-    <!-- YOUTUBE VIDEOS -->
-    <h2>Workout Tutorials</h2>
-    
-    <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/UBMk30rjy0o" 
-        title="Workout Tutorial 2" frameborder="0" allowfullscreen></iframe>
-
-    <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/2pLT-olgUJs" 
-        title="Workout Tutorial 3" frameborder="0" allowfullscreen></iframe>
-
-    <hr>
-
-    <!-- TABLE: Weekly Training Schedule -->
-    <h2>Weekly Training Schedule</h2>
+    <!-- Table (KEPT) -->
     <table>
         <tr>
-            <th>Day</th>
-            <th>Morning</th>
-            <th>Afternoon</th>
-            <th>Evening</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Year</th>
         </tr>
         <tr>
-            <td>Monday</td>
-            <td>Cardio</td>
-            <td>Strength Training</td>
-            <td>Yoga</td>
+            <td>Cindy</td>
+            <td>IT</td>
+            <td>2</td>
         </tr>
         <tr>
-            <td>Tuesday</td>
-            <td>HIIT</td>
-            <td>Core & Abs</td>
-            <td>Stretching</td>
-        </tr>
-        <tr>
-            <td>Wednesday</td>
-            <td>Cardio</td>
-            <td>Strength Training</td>
-            <td>Nutrition Workshop</td>
-        </tr>
-        <tr>
-            <td>Thursday</td>
-            <td>HIIT</td>
-            <td>Full Body</td>
-            <td>Yoga</td>
-        </tr>
-        <tr>
-            <td>Friday</td>
-            <td>Cardio</td>
-            <td>Core & Abs</td>
-            <td>Recovery Session</td>
+            <td>Alex</td>
+            <td>Computer Science</td>
+            <td>1</td>
         </tr>
     </table>
+</div>
+
+<!-- ================= CONTENT SECTION 3 ================= -->
+<div class="section-three">
+    <h1 class="highlight-external">Highlight 3 (External CSS)</h1>
+
+    <p class="para-external">
+        Paragraph 3 styled using external CSS
+    </p>
+
+    <h3 class="building-external">Building 3 (External CSS)</h3>
+
+    <!-- Image container -->
+    <div><img src="img5.jpg" width="150"></div>
+
+    <!-- YouTube Videos -->
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/l482T0yNkeo" allowfullscreen></iframe>
+</div>
 
 </body>
 </html>
-
