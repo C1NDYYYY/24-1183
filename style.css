@@ -1,24 +1,47 @@
-/* EXTERNAL CSS */
-
-/* Brand vision headings */
-.brand-vision {
-    color: darkblue;
-    text-align: center;
+body{
+    font-family: Arial, sans-serif;
+    background-color:#f4f4f4;
+    margin:0;
+    padding:40px;
 }
 
-/* Nutrition coaching heading */
-.nutrition-coaching {
-    color: teal;
+/* Page section */
+.hero{
+    background-color:white;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Community paragraph styling */
-.community {
-    color: darkred;
-    font-style: italic;
+/* ID styling */
+
+#gym-title{
+    color:#e63946;
+    text-align:center;
+    font-size:40px;
 }
 
-/* Workout gallery images */
-.gallery-img:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+#discipline-text{
+    color:#ff8800;
+    font-weight:bold;
+}
+
+#core-value{
+    color:#2a9d8f;
+}
+
+/* Class styling */
+
+.section-title{
+    color:#1d3557;
+}
+
+.text{
+    font-size:16px;
+    color:#333;
+}
+
+.highlight{
+    color:#6a4c93;
+    font-weight:bold;
 }
