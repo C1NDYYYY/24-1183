@@ -1,18 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cindy Jane - Assignments</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitZone Gym – Home</title>
+  <link rel="stylesheet" href="gym-style.css">
 </head>
 <body>
-    <h1>Web Development Assignments</h1>
-    <hr>
-    <nav>
-        <a href="assignment1.html">Assignment 1</a> | 
-        <a href="assignment2.html">Assignment 2</a> | 
-        <a href="assignment3.html">Assignment 3</a> | 
-        <a href="assignment4.html">Assignment 4</a> | 
-        <a href="gym.html">Assignment 5 (Gym Website)</a>
-    </nav>
+
+  <!-- MENU BAR (at least 5 menus) -->
+  <nav class="navbar">
+    <div class="logo">💪 FitZone Gym</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <h1>Welcome to FitZone Gym</h1>
+    <p>Your transformation starts here. Train hard. Live strong.</p>
+    <a href="classes.html" class="btn">Explore Classes</a>
+  </header>
+
+  <!-- TWO-COLUMN LAYOUT -->
+  <section class="two-col">
+    <div class="col">
+      <h2>Why Choose FitZone?</h2>
+      <!-- Formatted paragraph 1: Inline CSS -->
+      <p style="color: #e94560; font-weight: bold; font-size: 16px;">
+        At FitZone, we believe fitness is for everyone. Whether you are a beginner or a seasoned athlete, our world-class facilities and expert trainers are here to guide you every step of the way.
+      </p>
+      <!-- Formatted paragraph 2: Internal CSS via class -->
+      <p class="para-internal">
+        We offer state-of-the-art equipment, personalised training programs, nutrition counselling, and a supportive community that keeps you motivated and accountable throughout your fitness journey.
+      </p>
+    </div>
+    <div class="col">
+      <h2>Our Mission</h2>
+      <!-- Formatted paragraph 3: External CSS via class -->
+      <p class="para-external">
+        Our mission is to create an inclusive fitness environment where every member feels empowered. We combine science-backed training methods with passionate coaching to help you reach your peak performance.
+      </p>
+      <!-- Formatted paragraph 4 -->
+      <p class="para-highlight">
+        Join thousands of members who have transformed their lives at FitZone. Your goals are our goals — and we will not stop until you achieve them.
+      </p>
+    </div>
+  </section>
+
+  <!-- IMAGES IN CONTAINERS (at least 5) -->
+  <section class="gallery-preview">
+    <h2>Our Facilities</h2>
+    <div class="image-grid">
+      <div class="img-container" style="border: 3px solid #e94560;">
+        <img src="https://via.placeholder.com/200/e94560/FFFFFF?text=Weights+Room" alt="Weights Room">
+        <p>Weights Room</p>
+      </div>
+      <div class="img-container img-internal">
+        <img src="https://via.placeholder.com/200/FF8C00/FFFFFF?text=Cardio+Zone" alt="Cardio Zone">
+        <p>Cardio Zone</p>
+      </div>
+      <div class="img-container img-internal">
+        <img src="https://via.placeholder.com/200/28B463/FFFFFF?text=Pool" alt="Swimming Pool">
+        <p>Swimming Pool</p>
+      </div>
+      <div class="img-container img-external">
+        <img src="https://via.placeholder.com/200/2E86C1/FFFFFF?text=Yoga+Studio" alt="Yoga Studio">
+        <p>Yoga Studio</p>
+      </div>
+      <div class="img-container img-external">
+        <img src="https://via.placeholder.com/200/8E44AD/FFFFFF?text=Boxing+Ring" alt="Boxing Ring">
+        <p>Boxing Ring</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEOS IN CONTAINERS -->
+  <section class="videos-section">
+    <h2>Training Videos</h2>
+    <div class="video-grid">
+      <div class="video-container">
+        <video width="220" controls poster="https://via.placeholder.com/220x140/333/FFF?text=Video+1">
+          <source src="video1.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <p>Beginner Workout</p>
+      </div>
+      <div class="video-container">
+        <video width="220" controls poster="https://via.placeholder.com/220x140/333/FFF?text=Video+2">
+          <source src="video2.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <p>Strength Training</p>
+      </div>
+      <div class="video-container">
+        <video width="220" controls poster="https://via.placeholder.com/220x140/333/FFF?text=Video+3">
+          <source src="video3.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <p>Cardio Blast</p>
+      </div>
+      <div class="video-container">
+        <video width="220" controls poster="https://via.placeholder.com/220x140/333/FFF?text=Video+4">
+          <source src="video4.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <p>Yoga Flow</p>
+      </div>
+      <div class="video-container">
+        <video width="220" controls poster="https://via.placeholder.com/220x140/333/FFF?text=Video+5">
+          <source src="video5.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <p>HIIT Challenge</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABLE 1: Full-length membership plans -->
+  <section class="table-section">
+    <h2>Membership Plans</h2>
+    <table class="full-table">
+      <tr>
+        <th>Plan</th><th>Duration</th><th>Price (KSh)</th><th>Cardio</th>
+        <th>Weights</th><th>Pool</th><th>Classes</th><th>Nutrition</th>
+        <th>Personal Trainer</th><th>Locker</th>
+      </tr>
+      <tr>
+        <td>Basic</td><td>Monthly</td><td>2,500</td><td>✅</td>
+        <td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td>
+      </tr>
+      <tr>
+        <td>Standard</td><td>Monthly</td><td>4,500</td><td>✅</td>
+        <td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td>
+      </tr>
+      <tr>
+        <td>Premium</td><td>Monthly</td><td>7,500</td><td>✅</td>
+        <td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td>
+      </tr>
+      <tr>
+        <td>Annual</td><td>Yearly</td><td>50,000</td><td>✅</td>
+        <td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- TABLE 2: Class Schedule -->
+  <section class="table-section">
+    <h2>Weekly Class Schedule</h2>
+    <table class="full-table">
+      <tr>
+        <th>Time</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th>
+        <th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
+        <th>Trainer</th><th>Level</th>
+      </tr>
+      <tr>
+        <td>6:00 AM</td><td>HIIT</td><td>Yoga</td><td>Spin</td>
+        <td>Boxing</td><td>HIIT</td><td>Pilates</td><td>Rest</td>
+        <td>Coach Mike</td><td>All</td>
+      </tr>
+      <tr>
+        <td>9:00 AM</td><td>Yoga</td><td>Pilates</td><td>Zumba</td>
+        <td>Yoga</td><td>Strength</td><td>Zumba</td><td>Open</td>
+        <td>Coach Lisa</td><td>Beginner</td>
+      </tr>
+      <tr>
+        <td>5:00 PM</td><td>Strength</td><td>Spin</td><td>Boxing</td>
+        <td>Pilates</td><td>Yoga</td><td>HIIT</td><td>Open</td>
+        <td>Coach Sam</td><td>Advanced</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- LISTS: Nested list with at least 5 items -->
+  <section class="list-section">
+    <h2>Our Programs</h2>
+    <ul class="nested-list">
+      <li>Cardio Training
+        <ul>
+          <li>Treadmill Running</li>
+          <li>Cycling / Spin Classes</li>
+          <li>Rowing Machine</li>
+        </ul>
+      </li>
+      <li>Strength & Conditioning
+        <ul>
+          <li>Free Weights</li>
+          <li>Resistance Machines</li>
+          <li>Functional Training</li>
+        </ul>
+      </li>
+      <li>Group Classes
+        <ul>
+          <li>Yoga & Pilates</li>
+          <li>Zumba & Dance Fit</li>
+          <li>Boxing & Kickboxing</li>
+        </ul>
+      </li>
+      <li>Recovery & Wellness
+        <ul>
+          <li>Stretching Sessions</li>
+          <li>Foam Rolling</li>
+        </ul>
+      </li>
+      <li>Nutrition & Lifestyle
+        <ul>
+          <li>Meal Planning</li>
+          <li>Supplement Guidance</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ADDED FEATURES: Testimonials + CTA -->
+  <section class="testimonials">
+    <h2>What Our Members Say</h2>
+    <div class="two-col">
+      <div class="col testimonial-card">
+        <p>"FitZone changed my life. I lost 20kg in 6 months with their structured program!"</p>
+        <strong>– James K.</strong>
+      </div>
+      <div class="col testimonial-card">
+        <p>"The trainers here are world-class. The nutrition advice alone is worth the membership."</p>
+        <strong>– Amina W.</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="two-col">
+      <div class="col">
+        <h3>FitZone Gym</h3>
+        <p>123 Fitness Avenue, Nairobi, Kenya</p>
+        <p>📞 +254 700 000 000</p>
+        <p>✉️ info@fitzone.co.ke</p>
+      </div>
+      <div class="col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2026 FitZone Gym. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
