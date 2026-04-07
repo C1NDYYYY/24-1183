@@ -1,107 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Get Ripped Gym - Assignment 5</title>
+<title>Gym Website</title>
+
+<link rel="stylesheet" href="style.css">
 
 <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #111;
-    color: white;
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    padding:20px;
 }
 
-header {
-    background: #e60000;
-    padding: 20px;
-    text-align: center;
+.section{
+    background:white;
+    color:black;
+    padding:15px;
 }
 
-nav {
-    background: #222;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    margin: 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 30px;
-}
-
-.card {
-    background: #1c1c1c;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-footer {
-    background: #000;
-    text-align: center;
-    padding: 15px;
+img, video{
+    width:100%;
 }
 </style>
 
 </head>
 
-<body>
+<body style="background:#ccc;">
 
-<header>
-    <h1>💪 GET RIPPED GYM</h1>
-    <p>Build your strength. Transform your body.</p>
-</header>
+<a href="index.html">⬅ Back</a>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#programs">Programs</a>
-    <a href="#trainers">Trainers</a>
-    <a href="#contact">Contact</a>
-</nav>
+<h1 style="text-align:center;">Cindy Fitness Gym 💪</h1>
 
-<section id="about">
-    <h2>About Us</h2>
-    <div class="card">
-        <p>Get Ripped Gym is a modern fitness center focused on helping members achieve strength, endurance, and confidence through structured training programs.</p>
-    </div>
-</section>
+<!-- MENU -->
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Programs</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+</div>
 
-<section id="programs">
-    <h2>Programs</h2>
-    <div class="card">
-        <ul>
-            <li>Weight Training</li>
-            <li>Cardio Fitness</li>
-            <li>Fat Loss Program</li>
-            <li>Muscle Building Program</li>
-        </ul>
-    </div>
-</section>
+<div class="container">
 
-<section id="trainers">
-    <h2>Trainers</h2>
-    <div class="card">
-        <p>Our certified trainers guide you through safe and effective workouts tailored to your goals.</p>
-    </div>
-</section>
+<div class="section">
+<h2>About Us</h2>
+<p><b>We build strength</b></p>
+<p><i>Train with professionals</i></p>
+<p><u>Achieve your goals</u></p>
+<p style="color:red;">Push your limits</p>
+<p style="background:yellow;">Join today</p>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <div class="card">
-        <p>Email: getrippedgym@gmail.com</p>
-        <p>Phone: +254 700 000 000</p>
-        <p>Location: Nairobi, Kenya</p>
-    </div>
-</section>
+<ul>
+<li>Programs
+    <ul>
+        <li>Cardio</li>
+        <li>Weights</li>
+    </ul>
+</li>
+</ul>
 
-<footer>
-    <p>© 2026 Get Ripped Gym. All Rights Reserved.</p>
+</div>
+
+<div class="section">
+<h2>Gallery</h2>
+<img src="https://via.placeholder.com/150">
+<img src="https://via.placeholder.com/150">
+<img src="https://via.placeholder.com/150">
+<img src="https://via.placeholder.com/150">
+<img src="https://via.placeholder.com/150">
+</div>
+
+<div class="section">
+<h2>Videos</h2>
+<video controls></video>
+<video controls></video>
+<video controls></video>
+<video controls></video>
+<video controls></video>
+</div>
+
+<div class="section">
+<h2>Pricing Table</h2>
+<table border="1" width="100%">
+<tr><td>Plan</td><td>Price</td></tr>
+<tr><td>Basic</td><td>1000</td></tr>
+<tr><td>Pro</td><td>2000</td></tr>
+</table>
+
+<table border="1" width="100%">
+<tr><td>Trainer</td><td>Session</td></tr>
+<tr><td>John</td><td>Morning</td></tr>
+<tr><td>Jane</td><td>Evening</td></tr>
+</table>
+
+</div>
+
+</div>
+
+<footer style="text-align:center;">
+© Cindy Gym Website
 </footer>
 
 </body>
