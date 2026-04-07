@@ -1,99 +1,24 @@
 body{
-font-family: Arial, sans-serif;
-margin:0;
-line-height:1.6;
-background-color:#f5f5f5;
+    font-family: Arial;
+    text-align: center;
+    background-color: #1e1e2f;
+    color: white;
 }
 
-/* Sections */
-
-.section-hero{
-background:#d9edf7;
-padding:40px;
-text-align:center;
+.title{
+    margin-top: 40px;
 }
 
-.section-gallery{
-background:#e6f7ff;
-padding:30px;
-text-align:center;
+.menu a{
+    display: block;
+    margin: 15px;
+    padding: 15px;
+    background: #333;
+    color: cyan;
+    text-decoration: none;
+    border-radius: 10px;
 }
 
-.section-videos{
-background:#f0e6fa;
-padding:30px;
-text-align:center;
-}
-
-.section-table{
-background:#fff0cc;
-padding:30px;
-}
-
-/* IDs */
-
-#main-title{
-color:#e63946;
-font-size:48px;
-}
-
-#discipline-text{
-color:orange;
-font-weight:bold;
-}
-
-#core-value{
-color:green;
-}
-
-#training-programs{
-color:brown;
-}
-
-/* Classes */
-
-.heading-red{
-color:red;
-}
-
-.purple-heading{
-color:purple;
-}
-
-.text{
-font-size:16px;
-}
-
-.highlight{
-color:green;
-font-weight:bold;
-}
-
-.gallery-img{
-width:300px;
-margin:10px;
-border-radius:10px;
-}
-
-/* Table */
-
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
-}
-
-th,td{
-border:1px solid #333;
-padding:10px;
-text-align:center;
-}
-
-th{
-background:#222;
-color:white;
-}
-
-td{
-background:#eee;
+footer{
+    margin-top: 40px;
 }
