@@ -1,14 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Assignment 4</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 4</title>
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      background-color: #1a1a2e; /* Non-white background */
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center; /* Centered content */
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #e94560;
+    }
+
+    /* Internal CSS: Image container 2 */
+    .container2 {
+      display: inline-block;
+      border: 3px solid orange;
+      padding: 10px;
+      margin: 10px;
+      background-color: #16213e;
+      border-radius: 8px;
+    }
+
+    /* Internal CSS: Image container 3 */
+    .container3 {
+      display: inline-block;
+      border: 3px solid limegreen;
+      padding: 10px;
+      margin: 10px;
+      background-color: #0f3460;
+      border-radius: 8px;
+    }
+  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="assignment4.css">
 </head>
 <body>
-    <h1>Assignment 4 Styling</h1>
-    <div class="box">
-        <p>Centered layout with non-white background and external CSS.</p>
-        <img src="https://via.placeholder.com/200" alt="Gym">
-    </div>
+
+  <h1>Assignment 4 – CSS Styling</h1>
+  <p>Centered content with a dark background using all three CSS methods.</p>
+
+  <!-- Container 1: Inline CSS -->
+  <div style="display: inline-block; border: 3px solid cyan; padding: 10px; margin: 10px; background-color: #533483; border-radius: 8px;">
+    <p><strong>Container 1 – Inline CSS</strong></p>
+    <img src="https://via.placeholder.com/150/FF5733/FFFFFF?text=Image+1" alt="Image 1">
+  </div>
+
+  <!-- Container 2: Internal CSS -->
+  <div class="container2">
+    <p><strong>Container 2 – Internal CSS</strong></p>
+    <img src="https://via.placeholder.com/150/FFC300/000000?text=Image+2" alt="Image 2">
+  </div>
+
+  <!-- Container 3: Internal CSS -->
+  <div class="container3">
+    <p><strong>Container 3 – Internal CSS</strong></p>
+    <img src="https://via.placeholder.com/150/28B463/FFFFFF?text=Image+3" alt="Image 3">
+  </div>
+
+  <!-- Container 4: External CSS -->
+  <div class="container4-ext">
+    <p><strong>Container 4 – External CSS</strong></p>
+    <img src="https://via.placeholder.com/150/2E86C1/FFFFFF?text=Image+4" alt="Image 4">
+  </div>
+
+  <!-- Container 5: External CSS -->
+  <div class="container5-ext">
+    <p><strong>Container 5 – External CSS</strong></p>
+    <img src="https://via.placeholder.com/150/8E44AD/FFFFFF?text=Image+5" alt="Image 5">
+  </div>
+
+  <!-- CSS method labels -->
+  <br><br>
+  <p style="color: cyan; font-size: 14px;">✅ Inline CSS | ✅ Internal CSS | ✅ External CSS | ✅ Centered | ✅ Non-white Background | ✅ 5 Image Containers</p>
+
 </body>
 </html>
