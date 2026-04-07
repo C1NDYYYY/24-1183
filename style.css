@@ -1,24 +1,30 @@
-body{
-    font-family: Arial;
-    text-align: center;
-    background-color: #1e1e2f;
-    color: white;
+body {
+    background-color: #f4f4f9; /* Non-white background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centered content */
 }
 
-.title{
-    margin-top: 40px;
+.box {
+    border: 3px solid #333;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    background: #fff;
 }
 
-.menu a{
-    display: block;
-    margin: 15px;
-    padding: 15px;
-    background: #333;
-    color: cyan;
-    text-decoration: none;
-    border-radius: 10px;
+table {
+    width: 100%; /* Full length */
+    border-collapse: collapse;
+    margin: 20px 0;
 }
+table, th, td { border: 1px solid black; padding: 10px; }
 
-footer{
-    margin-top: 40px;
-}
+/* Assignment 3 External Classes */
+.ext-p { color: purple; text-decoration: underline; }
+.ext-h1 { color: #2c3e50; }
+.ext-h3 { color: #2980b9; }
+
+footer { padding: 20px; background: #222; color: white; width: 100%; text-align: center; }
