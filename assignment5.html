@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>IronPulse Gym - Full System</title>
+<title>IronPulse Gym</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -13,101 +13,59 @@ font-weight:bold;
 }
 
 body{
-text-align:center;
+margin:0;
+font-family:Arial;
+background:#111;
+color:white;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
+<!-- NAVIGATION -->
 <header class="navbar">
-<h1>IRONPULSE GYM SYSTEM</h1>
+<h1>IRONPULSE GYM</h1>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="#a1">Assignment 1</a>
-<a href="#a2">Assignment 2</a>
-<a href="#a3">Assignment 3</a>
-<a href="#a4">Assignment 4</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#programs">Programs</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
 </nav>
 </header>
 
 <!-- HERO -->
-<section class="hero">
-<h2>Complete Fitness Management System</h2>
-<p>Strength • Discipline • Transformation</p>
+<section id="home" class="hero">
+<h2>Build Strength. Build Discipline. Build Yourself.</h2>
+<p>Welcome to IronPulse Gym — where transformation begins.</p>
 </section>
 
-<hr>
-
-<!-- ASSIGNMENT 1 -->
-<section id="a1" class="card">
-
-<h2>Assignment 1 - Website Structure</h2>
-
-<div class="card">
-<h3>Home Section</h3>
-<p>Welcome to IronPulse Gym where transformation begins.</p>
-</div>
-
-<div class="card">
-<h3>About</h3>
-<p>We provide strength training, cardio, and body transformation programs.</p>
-</div>
-
-<div class="card">
-<h3>Contact</h3>
-<p>Email: ironpulse@gym.com | Phone: +254 700 000 000</p>
-</div>
-
-<div class="card">
-<h3>Search</h3>
-<input type="text" placeholder="Search workouts...">
-</div>
-
-<h3>Gym Images</h3>
-<img src="images/img1.jpg" width="180">
-<img src="images/img2.jpg" width="180">
-<img src="images/img3.jpg" width="180">
-<img src="images/img4.jpg" width="180">
-<img src="images/img5.jpg" width="180">
-
-<h3>Workout Videos</h3>
-
-<iframe width="250" src="https://www.youtube.com/embed/U0bhE67HuDY"></iframe>
-<iframe width="250" src="https://www.youtube.com/embed/2pLT-olgUJs"></iframe>
-<iframe width="250" src="https://www.youtube.com/embed/UBMk30rjy0o"></iframe>
-<iframe width="250" src="https://www.youtube.com/embed/ML6j5R6J9mA"></iframe>
-
+<!-- ABOUT -->
+<section id="about" class="card">
+<h2>About Us</h2>
+<p>IronPulse Gym is a modern fitness center focused on strength training, endurance, and full body transformation programs designed for all fitness levels.</p>
 </section>
 
-<hr>
+<!-- PROGRAMS -->
+<section id="programs" class="card">
 
-<!-- ASSIGNMENT 2 -->
-<section id="a2" class="card">
+<h2>Training Programs</h2>
 
-<h2>Assignment 2 - Text Formatting</h2>
+<ul>
+<li>Strength Training</li>
+<li>Bodybuilding</li>
+<li>Fat Loss Program</li>
+<li>Cardio Fitness</li>
+<li>Personal Coaching</li>
+</ul>
 
-<p><b>Train Hard Every Day</b></p>
-<p><i>Stay Consistent</i></p>
-<p><u>Never Skip Training</u></p>
+<br>
 
-<p>Gym Cycle X<sup>2</sup></p>
-<p>Hydration H<sub>2</sub>O is key</p>
+<h2>Weekly Workout Plan</h2>
 
-<p><s>Old plan removed</s></p>
-<p><mark>New plan active</mark></p>
-
-<blockquote>“Discipline creates results.”</blockquote>
-
-<footer>Gym Training Report</footer>
-
-<br><br><br>
-
-<h3>Workout Table (FULL 10 COLUMNS × 5 ROWS)</h3>
-
-<table border="1" width="100%">
+<table border="1" width="100%" style="text-align:center;">
 <tr>
 <th>Day</th>
 <th>Workout</th>
@@ -122,11 +80,11 @@ text-align:center;
 </tr>
 
 <tr>
-<td>Mon</td><td>Chest</td><td>Bench</td><td>4</td><td>10</td><td>60kg</td><td>45min</td><td>1min</td><td>300</td><td>Strength</td>
+<td>Mon</td><td>Chest</td><td>Bench Press</td><td>4</td><td>10</td><td>60kg</td><td>45min</td><td>1min</td><td>300</td><td>Strength</td>
 </tr>
 
 <tr>
-<td>Tue</td><td>Back</td><td>Pullups</td><td>4</td><td>8</td><td>Body</td><td>40min</td><td>1min</td><td>250</td><td>Form</td>
+<td>Tue</td><td>Back</td><td>Pull Ups</td><td>4</td><td>8</td><td>Body</td><td>40min</td><td>1min</td><td>250</td><td>Form</td>
 </tr>
 
 <tr>
@@ -138,44 +96,17 @@ text-align:center;
 </tr>
 
 <tr>
-<td>Fri</td><td>Cardio</td><td>Run</td><td>1</td><td>30min</td><td>-</td><td>30min</td><td>-</td><td>350</td><td>Fat burn</td>
+<td>Fri</td><td>Cardio</td><td>Running</td><td>1</td><td>30min</td><td>-</td><td>30min</td><td>-</td><td>350</td><td>Fat burn</td>
 </tr>
 
 </table>
 
 </section>
 
-<hr>
+<!-- GALLERY -->
+<section id="gallery" class="card">
 
-<!-- ASSIGNMENT 3 -->
-<section id="a3" class="card">
-
-<h2>Assignment 3 - CSS Types</h2>
-
-<p style="color:blue; font-style:italic;">
-Inline CSS: Gym motivation starts here.
-</p>
-
-<p class="internal">
-Internal CSS: Progress is consistency.
-</p>
-
-<p class="external">
-External CSS: Strength is built daily.
-</p>
-
-<h3 style="color:red;">Inline Building</h3>
-<h3>Internal Building</h3>
-<h3 class="external">External Building</h3>
-
-</section>
-
-<hr>
-
-<!-- ASSIGNMENT 4 -->
-<section id="a4" class="card">
-
-<h2>Assignment 4 - Gallery</h2>
+<h2>Gym Gallery</h2>
 
 <img src="images/img1.jpg" width="180">
 <img src="images/img2.jpg" width="180">
@@ -183,16 +114,42 @@ External CSS: Strength is built daily.
 <img src="images/img4.jpg" width="180">
 <img src="images/img5.jpg" width="180">
 
-<p style="color:green;">Inline styled text</p>
-<p class="internal">Internal styled text</p>
-<p class="external">External styled text</p>
+<br><br>
+
+<h3>Training Videos</h3>
+
+<iframe width="250" src="https://www.youtube.com/embed/U0bhE67HuDY"></iframe>
+<iframe width="250" src="https://www.youtube.com/embed/2pLT-olgUJs"></iframe>
+<iframe width="250" src="https://www.youtube.com/embed/UBMk30rjy0o"></iframe>
+<iframe width="250" src="https://www.youtube.com/embed/ML6j5R6J9mA"></iframe>
 
 </section>
 
-<hr>
+<!-- CONTACT -->
+<section id="contact" class="card">
+
+<h2>Contact Us</h2>
+<p>Email: ironpulse@gym.com</p>
+<p>Phone: +254 700 000 000</p>
+
+<br>
+
+<p style="color:blue; font-style:italic;">
+Inline CSS: Train harder every day.
+</p>
+
+<p class="internal">
+Internal CSS: Discipline creates results.
+</p>
+
+<p class="external">
+External CSS: Strength is built daily.
+</p>
+
+</section>
 
 <!-- FOOTER -->
-<footer>
+<footer style="text-align:center; padding:20px; background:black;">
 <p>© 2026 IronPulse Gym - All Rights Reserved</p>
 </footer>
 
