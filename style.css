@@ -1,30 +1,32 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#0d0d0d;
+background:#0c0c0c;
 color:white;
 }
 
 /* HEADER */
 header{
-background:linear-gradient(90deg,#111,#222);
 text-align:center;
-padding:25px;
+padding:30px;
+background:#111;
+border-bottom:2px solid #00ff99;
 }
 
 header h1{
 margin:0;
 color:#00ff99;
-letter-spacing:2px;
 }
 
-/* NAVBAR (LIKE EXAMPLE SITE) */
+/* NAVIGATION (like your reference site) */
 nav{
-background:#1c1c1c;
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
+background:#1a1a1a;
 padding:10px;
+position:sticky;
+top:0;
 }
 
 nav a{
@@ -32,9 +34,9 @@ color:white;
 text-decoration:none;
 padding:10px 15px;
 margin:5px;
+background:#2b2b2b;
 border-radius:8px;
 transition:0.3s;
-background:#333;
 }
 
 nav a:hover{
@@ -42,40 +44,45 @@ background:#00ff99;
 color:black;
 }
 
-/* HERO */
-.hero{
-text-align:center;
-padding:40px;
-background:#151515;
+/* PAGE CONTAINER */
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
 }
 
-/* GRID IMAGES */
+/* CARD STYLE (IMPORTANT FOR “ELDA LOOK”) */
+.card{
+background:#1b1b1b;
+padding:20px;
+margin:15px 0;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,255,153,0.15);
+}
+
+/* IMAGE GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:10px;
-padding:20px;
 }
 
 .grid img{
 width:100%;
-height:200px;
+height:180px;
 object-fit:cover;
 border-radius:10px;
 }
 
 /* TABLES */
 table{
-width:90%;
-margin:20px auto;
+width:100%;
 border-collapse:collapse;
-}
-
-table,td,th{
-border:1px solid #00ff99;
+margin-top:10px;
 }
 
 td,th{
+border:1px solid #00ff99;
 padding:10px;
 text-align:center;
 }
@@ -83,7 +90,7 @@ text-align:center;
 /* FOOTER */
 footer{
 text-align:center;
-padding:15px;
+padding:20px;
 background:#111;
 margin-top:20px;
 }
