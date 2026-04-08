@@ -1,8 +1,63 @@
-.external {
-color: purple;
-text-decoration: underline;
+body{
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
 }
 
-.highlight3 {
-background: pink;
+.nav{
+background:#111;
+color:white;
+padding:15px;
+}
+
+.nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
+.hero{
+padding:30px;
+background:#ddd;
+text-align:center;
+}
+
+.container{
+display:flex;
+gap:10px;
+padding:10px;
+}
+
+.box{
+background:white;
+padding:10px;
+border:1px solid #ccc;
+}
+
+.search{
+margin:10px;
+padding:5px;
+}
+
+.externalPurple{
+color:purple;
+text-decoration:underline;
+}
+
+.highlight3{
+background:pink;
+}
+
+.h2internal{
+color:green;
+}
+
+.h3external{
+color:purple;
+}
+
+.columns{
+display:flex;
+gap:20px;
+padding:20px;
 }
