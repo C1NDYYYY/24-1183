@@ -5,29 +5,53 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-.internal{
+.internalText{
 color:orange;
 font-weight:bold;
 }
-.h2{background:yellow;}
+
+.externalText{
+color:purple;
+text-decoration:underline;
+}
+
+.internalHighlight{
+background:yellow;
+}
 </style>
 </head>
 
 <body>
 
-<p style="color:blue;font-style:italic;">Gym discipline builds strong athletes.</p>
+<h1 style="color:red;text-align:center;">Gym Styling Assignment</h1>
 
-<p class="internal">Nutrition and training must work together.</p>
+<!-- INLINE CSS -->
+<p style="color:blue;font-style:italic;">
+A strong body is built through consistent training and discipline at the gym.
+</p>
 
-<p class="external">Recovery is essential for muscle growth and strength building.</p>
+<!-- INTERNAL CSS -->
+<p class="internalText">
+Proper nutrition and rest are equally important as workouts for muscle growth.
+</p>
 
-<p style="background:lightblue;">Consistency builds results.</p>
-<p class="h2">Hydration improves performance.</p>
-<p class="h3">Sleep supports recovery and energy.</p>
+<!-- EXTERNAL CSS -->
+<p class="externalText">
+Gym training improves both physical strength and mental health over time.
+</p>
 
-<h3 style="color:red;">Building A (Inline CSS)</h3>
-<h3 class="b2">Building B (Internal CSS)</h3>
-<h3 class="b3">Building C (External CSS)</h3>
+<!-- HIGHLIGHTS -->
+<p style="background:lightgreen;">Inline highlight: Protein is important</p>
+
+<p class="internalHighlight">Internal highlight: Stay hydrated during workouts</p>
+
+<p class="externalHighlight">External highlight: Never skip leg day</p>
+
+<h3 style="color:blue;">Inline Styled Building Section</h3>
+
+<h3 class="internalText">Internal Styled Building Section</h3>
+
+<h3 class="externalText">External Styled Building Section</h3>
 
 </body>
 </html>
