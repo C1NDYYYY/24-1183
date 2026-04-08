@@ -1,20 +1,19 @@
 body{
-font-family: Arial;
 margin:0;
-background:#ffffff;
-}
-
-header{
-background:black;
+font-family:Arial;
+background:#111;
 color:white;
-padding:20px;
-text-align:center;
 }
 
-nav{
-background:#333;
-padding:10px;
-text-align:center;
+.navbar{
+display:flex;
+justify-content:space-between;
+background:black;
+padding:15px;
+}
+
+.navbar h1{
+color:#ff3c00;
 }
 
 nav a{
@@ -23,25 +22,37 @@ margin:10px;
 text-decoration:none;
 }
 
-.container{
-border:1px solid #ccc;
-padding:10px;
-margin:10px;
+nav a:hover{
+color:#ff3c00;
 }
 
-.columns{
+.hero{
+background:url("images/img1.jpg");
+background-size:cover;
+padding:100px;
+text-align:center;
+}
+
+.hero h2{
+background:rgba(0,0,0,0.6);
+padding:10px;
+}
+
+.cards{
 display:flex;
-gap:20px;
+gap:10px;
 padding:20px;
 }
 
-.col{
+.card{
+background:#222;
+padding:20px;
 flex:1;
-border:1px solid #ccc;
-padding:10px;
+border-left:4px solid #ff3c00;
 }
 
-.external{
-color:purple;
-font-weight:bold;
+footer{
+text-align:center;
+padding:20px;
+background:black;
 }
