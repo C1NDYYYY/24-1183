@@ -2,24 +2,40 @@
 <html>
 <head>
     <title>Assignment 3</title>
-    <link rel="stylesheet" href="style.css">
+
     <style>
-        .int-p { color: orange; font-weight: bold; }
-        .int-h1 { color: #e67e22; border-bottom: 2px solid; }
-        .int-h3 { color: #d35400; text-transform: uppercase; }
+        .internal {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .highlight2 {
+            background-color: yellow;
+        }
+
+        h3.internal {
+            color: green;
+        }
     </style>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <p style="color: blue; font-style: italic;">Paragraph 1 (Inline)</p>
-    <p class="int-p">Paragraph 2 (Internal)</p>
-    <p class="ext-p">Paragraph 3 (External)</p>
 
-    <h1 style="color: red;">Highlight 1 (Inline)</h1>
-    <h1 class="int-h1">Highlight 2 (Internal)</h1>
-    <h1 class="ext-h1">Highlight 3 (External)</h1>
+<p style="color:blue; font-style:italic;">Paragraph 1 Inline CSS</p>
 
-    <h3 style="color: green;">Building 1 (Inline)</h3>
-    <h3 class="int-h3">Building 2 (Internal)</h3>
-    <h3 class="ext-h3">Building 3 (External)</h3>
+<p class="internal">Paragraph 2 Internal CSS</p>
+
+<p class="external">Paragraph 3 External CSS</p>
+
+<p style="background-color:lightblue;">Highlight 1 Inline</p>
+<p class="highlight2">Highlight 2 Internal</p>
+<p class="highlight3">Highlight 3 External</p>
+
+<h3 style="color:red;">Building 1 Inline</h3>
+<h3 class="internal">Building 2 Internal</h3>
+<h3 class="external">Building 3 External</h3>
+
 </body>
 </html>
