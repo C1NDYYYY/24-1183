@@ -1,42 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Assignment 5</title>
+<meta charset="UTF-8">
+<title>IronPulse Gym - Full System</title>
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+.internal{
+color:orange;
+font-weight:bold;
+}
+
+body{
+text-align:center;
+}
+</style>
 </head>
 
 <body>
 
-<h1>FINAL GYM SYSTEM</h1>
+<!-- HEADER -->
+<header class="navbar">
+<h1>IRONPULSE GYM SYSTEM</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="#a1">Assignment 1</a>
+<a href="#a2">Assignment 2</a>
+<a href="#a3">Assignment 3</a>
+<a href="#a4">Assignment 4</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<h2>Complete Fitness Management System</h2>
+<p>Strength • Discipline • Transformation</p>
+</section>
+
+<hr>
+
+<!-- ASSIGNMENT 1 -->
+<section id="a1" class="card">
+
+<h2>Assignment 1 - Website Structure</h2>
 
 <div class="card">
-<h2>Workout Plan</h2>
-<ul>
-<li>Chest</li>
-<li>Back</li>
-<li>Legs</li>
-<li>Arms</li>
-<li>Cardio</li>
-</ul>
+<h3>Home Section</h3>
+<p>Welcome to IronPulse Gym where transformation begins.</p>
 </div>
 
 <div class="card">
-<h2>Nutrition</h2>
-<p>High protein meals for muscle growth and recovery.</p>
+<h3>About</h3>
+<p>We provide strength training, cardio, and body transformation programs.</p>
 </div>
 
-<h2>Workout Table</h2>
-<table border="1" width="100%">
-<tr><td>Exercise</td><td>Sets</td><td>Reps</td><td>Day</td><td>Type</td></tr>
-</table>
+<div class="card">
+<h3>Contact</h3>
+<p>Email: ironpulse@gym.com | Phone: +254 700 000 000</p>
+</div>
 
-<h2>Videos</h2>
+<div class="card">
+<h3>Search</h3>
+<input type="text" placeholder="Search workouts...">
+</div>
+
+<h3>Gym Images</h3>
+<img src="images/img1.jpg" width="180">
+<img src="images/img2.jpg" width="180">
+<img src="images/img3.jpg" width="180">
+<img src="images/img4.jpg" width="180">
+<img src="images/img5.jpg" width="180">
+
+<h3>Workout Videos</h3>
 
 <iframe width="250" src="https://www.youtube.com/embed/U0bhE67HuDY"></iframe>
 <iframe width="250" src="https://www.youtube.com/embed/2pLT-olgUJs"></iframe>
 <iframe width="250" src="https://www.youtube.com/embed/UBMk30rjy0o"></iframe>
+<iframe width="250" src="https://www.youtube.com/embed/ML6j5R6J9mA"></iframe>
 
-<footer>Final Submission Complete</footer>
+</section>
+
+<hr>
+
+<!-- ASSIGNMENT 2 -->
+<section id="a2" class="card">
+
+<h2>Assignment 2 - Text Formatting</h2>
+
+<p><b>Train Hard Every Day</b></p>
+<p><i>Stay Consistent</i></p>
+<p><u>Never Skip Training</u></p>
+
+<p>Gym Cycle X<sup>2</sup></p>
+<p>Hydration H<sub>2</sub>O is key</p>
+
+<p><s>Old plan removed</s></p>
+<p><mark>New plan active</mark></p>
+
+<blockquote>“Discipline creates results.”</blockquote>
+
+<footer>Gym Training Report</footer>
+
+<br><br><br>
+
+<h3>Workout Table (FULL 10 COLUMNS × 5 ROWS)</h3>
+
+<table border="1" width="100%">
+<tr>
+<th>Day</th>
+<th>Workout</th>
+<th>Exercise</th>
+<th>Sets</th>
+<th>Reps</th>
+<th>Weight</th>
+<th>Time</th>
+<th>Rest</th>
+<th>Calories</th>
+<th>Notes</th>
+</tr>
+
+<tr>
+<td>Mon</td><td>Chest</td><td>Bench</td><td>4</td><td>10</td><td>60kg</td><td>45min</td><td>1min</td><td>300</td><td>Strength</td>
+</tr>
+
+<tr>
+<td>Tue</td><td>Back</td><td>Pullups</td><td>4</td><td>8</td><td>Body</td><td>40min</td><td>1min</td><td>250</td><td>Form</td>
+</tr>
+
+<tr>
+<td>Wed</td><td>Legs</td><td>Squats</td><td>5</td><td>12</td><td>80kg</td><td>50min</td><td>2min</td><td>400</td><td>Deep</td>
+</tr>
+
+<tr>
+<td>Thu</td><td>Arms</td><td>Curls</td><td>4</td><td>12</td><td>20kg</td><td>30min</td><td>1min</td><td>200</td><td>Control</td>
+</tr>
+
+<tr>
+<td>Fri</td><td>Cardio</td><td>Run</td><td>1</td><td>30min</td><td>-</td><td>30min</td><td>-</td><td>350</td><td>Fat burn</td>
+</tr>
+
+</table>
+
+</section>
+
+<hr>
+
+<!-- ASSIGNMENT 3 -->
+<section id="a3" class="card">
+
+<h2>Assignment 3 - CSS Types</h2>
+
+<p style="color:blue; font-style:italic;">
+Inline CSS: Gym motivation starts here.
+</p>
+
+<p class="internal">
+Internal CSS: Progress is consistency.
+</p>
+
+<p class="external">
+External CSS: Strength is built daily.
+</p>
+
+<h3 style="color:red;">Inline Building</h3>
+<h3>Internal Building</h3>
+<h3 class="external">External Building</h3>
+
+</section>
+
+<hr>
+
+<!-- ASSIGNMENT 4 -->
+<section id="a4" class="card">
+
+<h2>Assignment 4 - Gallery</h2>
+
+<img src="images/img1.jpg" width="180">
+<img src="images/img2.jpg" width="180">
+<img src="images/img3.jpg" width="180">
+<img src="images/img4.jpg" width="180">
+<img src="images/img5.jpg" width="180">
+
+<p style="color:green;">Inline styled text</p>
+<p class="internal">Internal styled text</p>
+<p class="external">External styled text</p>
+
+</section>
+
+<hr>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 IronPulse Gym - All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
