@@ -2,49 +2,45 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Arial', sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 body{
-    background:#0a0a0a;
+    background:#0b0b0b;
     color:white;
-    scroll-behavior:smooth;
 }
 
-/* NAVBAR */
+/* NAV */
 header{
     position:fixed;
-    top:0;
     width:100%;
+    top:0;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:18px 10%;
-    background:rgba(0,0,0,0.6);
+    background:rgba(0,0,0,0.75);
     backdrop-filter:blur(12px);
-    border-bottom:1px solid rgba(255,46,46,0.4);
+    border-bottom:1px solid #ff2e2e;
     z-index:1000;
 }
 
 header h1{
     color:#ff2e2e;
-    letter-spacing:3px;
-    font-weight:900;
 }
 
 nav a{
     color:white;
-    margin:0 14px;
+    margin:0 12px;
     text-decoration:none;
     font-weight:600;
-    transition:0.3s;
 }
 
 nav a:hover{
     color:#ff2e2e;
 }
 
-/* HERO */
+/* HERO (BIGGER + BOLDER LIKE JERSEY SITES) */
 .hero{
     height:100vh;
     display:flex;
@@ -52,110 +48,99 @@ nav a:hover{
     justify-content:center;
     padding:0 10%;
     background:
-    linear-gradient(90deg, rgba(0,0,0,0.9), rgba(0,0,0,0.3)),
+    linear-gradient(120deg, rgba(0,0,0,0.9), rgba(255,46,46,0.2)),
     url('../images/img1.jpg') center/cover;
 }
 
 .hero h2{
-    font-size:70px;
-    font-weight:900;
+    font-size:72px;
     color:#ff2e2e;
-    line-height:1.1;
+    font-weight:900;
 }
 
 .hero p{
-    margin:20px 0;
-    max-width:500px;
-    color:#ccc;
-    font-size:18px;
+    max-width:520px;
+    color:#ddd;
+    margin:15px 0;
 }
 
 .btn{
-    width:fit-content;
-    padding:14px 30px;
     background:#ff2e2e;
+    padding:14px 30px;
     color:white;
     text-decoration:none;
     border-radius:6px;
-    font-weight:bold;
-    transition:0.3s;
+    width:fit-content;
 }
 
-.btn:hover{
-    transform:scale(1.07);
-}
-
-/* SECTIONS */
-section{
-    padding:100px 10%;
-}
-
+/* SECTION TITLE */
 h2{
     text-align:center;
-    font-size:34px;
-    margin-bottom:50px;
+    padding:40px 0;
     color:#ff2e2e;
 }
 
-/* CARD GRID */
-.card-container{
+/* GRID STYLE (JERSEY PRODUCT LOOK) */
+.grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:25px;
+    padding:0 10%;
+    padding-bottom:60px;
 }
 
+/* PRODUCT STYLE CARD */
 .card{
-    background:#141414;
-    padding:25px;
-    border-radius:14px;
-    text-align:center;
-    transition:0.35s;
-    border:1px solid transparent;
+    background:#151515;
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid rgba(255,46,46,0.2);
+    transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-12px);
+    transform:translateY(-10px);
     border:1px solid #ff2e2e;
-    box-shadow:0 10px 25px rgba(255,46,46,0.15);
 }
 
-/* IMAGES */
+/* IMAGE INSIDE CARD */
 .card img{
     width:100%;
-    border-radius:12px;
+    height:220px;
+    object-fit:cover;
 }
 
-/* TABLE */
+/* TEXT INSIDE CARD */
+.card p{
+    padding:15px;
+    text-align:center;
+}
+
+/* TABLE (CLEAN JERSEY STORE STYLE) */
 table{
-    width:100%;
+    width:80%;
+    margin:auto;
     border-collapse:collapse;
-    border-radius:10px;
-    overflow:hidden;
+    margin-bottom:60px;
 }
 
 th,td{
-    padding:16px;
+    padding:15px;
     text-align:center;
 }
 
 th{
     background:#ff2e2e;
-    text-transform:uppercase;
 }
 
 tr{
-    background:#141414;
-    transition:0.3s;
-}
-
-tr:hover{
-    background:#1f1f1f;
+    background:#151515;
 }
 
 /* FOOTER */
 footer{
     text-align:center;
-    padding:30px;
+    padding:25px;
     background:#111;
-    border-top:1px solid rgba(255,46,46,0.4);
+    border-top:1px solid #ff2e2e;
 }
