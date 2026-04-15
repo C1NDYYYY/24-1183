@@ -23,7 +23,7 @@ nav a:hover {
   color: #38bdf8;
 }
 
-/* MAIN CONTAINER */
+/* CONTAINER */
 .container {
   width: 85%;
   margin: auto;
@@ -31,14 +31,14 @@ nav a:hover {
   text-align: center;
 }
 
-/* GRID (LIKE THAT WEBSITE) */
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
-/* CARDS */
+/* CARD */
 .card {
   background: #1e293b;
   padding: 15px;
@@ -50,13 +50,13 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* IMAGES + VIDEOS */
+/* MEDIA */
 img, video {
   width: 100%;
   border-radius: 10px;
 }
 
-/* TWO COLUMNS */
+/* COLUMNS */
 .columns {
   display: flex;
   gap: 20px;
@@ -83,4 +83,10 @@ footer {
   padding: 15px;
   text-align: center;
   margin-top: 30px;
+}
+
+/* EXTERNAL CSS FOR A3 */
+.external {
+  color: purple;
+  text-decoration: underline;
 }
