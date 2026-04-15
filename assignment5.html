@@ -1,17 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Assignment 5</title>
-
+<title>Cindy Gym</title>
 <link rel="stylesheet" href="style.css">
-
-<style>
-.column {
-  float: left;
-  width: 50%;
-}
-</style>
-
 </head>
 
 <body>
@@ -21,24 +12,28 @@
 <a href="assignment2.html">A2</a>
 <a href="assignment3.html">A3</a>
 <a href="assignment4.html">A4</a>
-<a href="assignment5.html">A5</a>
+<a href="assignment5.html">Home</a>
 </nav>
 
-<h1>Final Project</h1>
+<div class="container">
 
-<div class="column">
-<h2>Images</h2>
+<h1>Welcome to Cindy Fitness Gym</h1>
+<p>Your transformation starts here 💪</p>
 
-<img src="gym1.jpg" width="100%">
-<img src="gym2.jpg" width="100%">
-<img src="gym3.jpg" width="100%">
-<img src="gym4.jpg" width="100%">
-<img src="gym5.jpg" width="100%">
+<!-- GRID IMAGES (MATCHES OTHER SITE STYLE) -->
+<div class="grid">
+
+<div class="card"><img src="gym1.jpg"></div>
+<div class="card"><img src="gym2.jpg"></div>
+<div class="card"><img src="gym3.jpg"></div>
+<div class="card"><img src="gym4.jpg"></div>
+<div class="card"><img src="gym5.jpg"></div>
+
 </div>
 
-<div class="column">
-<h2>Videos</h2>
+<h2>Workout Videos</h2>
 
+<div class="grid">
 <video controls src="vid1.mp4"></video>
 <video controls src="vid2.mp4"></video>
 <video controls src="vid3.mp4"></video>
@@ -46,29 +41,33 @@
 <video controls src="vid5.mp4"></video>
 </div>
 
-<br style="clear:both;">
+<!-- TWO COLUMN SECTION -->
+<div class="columns">
 
-<h2>Table</h2>
-
-<table border="1" width="100%">
-<tr><th>Name</th><th>Program</th></tr>
-<tr><td>John</td><td>Cardio</td></tr>
-<tr><td>Jane</td><td>Weights</td></tr>
-</table>
-
-<h2>List</h2>
-
+<div class="column">
+<h2>Programs</h2>
 <ul>
-<li>Main
-  <ul>
-    <li>Sub 1</li>
-    <li>Sub 2</li>
-    <li>Sub 3</li>
-    <li>Sub 4</li>
-    <li>Sub 5</li>
-  </ul>
-</li>
+<li>Beginner</li>
+<li>Intermediate</li>
+<li>Advanced</li>
+<li>Elite</li>
+<li>Bodybuilding</li>
 </ul>
+</div>
+
+<div class="column">
+<h2>Schedule</h2>
+<table>
+<tr><th>Day</th><th>Activity</th></tr>
+<tr><td>Monday</td><td>Cardio</td></tr>
+<tr><td>Tuesday</td><td>Weights</td></tr>
+<tr><td>Wednesday</td><td>Yoga</td></tr>
+</table>
+</div>
+
+</div>
+
+</div>
 
 <footer>
 <p>© 2026 Cindy Gym</p>
