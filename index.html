@@ -1,37 +1,542 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>GET RIPPED GYM</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitZone Gym | Premium Fitness Centre</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-    <h1>GET RIPPED</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+  <!-- ===== STICKY NAVBAR ===== -->
+  <nav class="navbar" id="top">
+    <a href="#home-hero">🏠 HOME</a>
+    <a href="#about-section">💪 ABOUT</a>
+    <a href="#classes-section">🔥 CLASSES</a>
+    <a href="#trainers-section">⭐ TRAINERS</a>
+    <a href="#membership-section">🏅 MEMBERSHIP</a>
+    <a href="#gallery-section">📸 GALLERY</a>
+    <a href="#contact-section">📞 CONTACT</a>
+  </nav>
 
-<div class="hero">
-    <h2>BUILD YOUR BODY</h2>
-    <p>Premium fitness programs designed for strength, transformation and performance.</p>
-    <a class="btn" href="services.html">Join Now</a>
-</div>
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home-hero">
+    <div class="hero-inner">
+      <h1>⚡ FitZone Gym · Your Transformation Starts Here</h1>
 
-<h2>WHY CHOOSE US</h2>
+      <p><strong>📖 Paragraph 1:</strong> FitZone is more than a gym — it is a movement. Every drop of sweat, every rep, every early morning session is a step toward the best version of yourself. Our state-of-the-art facility in Nairobi is built for champions, beginners, and everyone in between.</p>
 
-<div class="grid">
-    <div class="card"><p>Elite Trainers</p></div>
-    <div class="card"><p>Modern Equipment</p></div>
-    <div class="card"><p>Nutrition Plans</p></div>
-    <div class="card"><p>24/7 Support</p></div>
-</div>
+      <p><strong>🏆 Paragraph 2:</strong> Since 2015, FitZone has helped over <strong>5,000 members</strong> achieve their fitness goals. From weight loss to athletic performance, our certified trainers, world-class equipment, and vibrant community make FitZone the most powerful fitness ecosystem in the city.</p>
+
+      <!-- Images row -->
+      <div class="media-row">
+        <div class="media-card">
+          <img src="https://picsum.photos/id/26/400/260" alt="Gym weights area">
+          <p>📸 Premium Weights Floor — World-class equipment</p>
+        </div>
+        <div class="media-card">
+          <img src="https://picsum.photos/id/20/400/240" alt="Cardio zone">
+          <p>🎥 State-of-the-art Cardio Zone</p>
+        </div>
+        <div class="media-card">
+          <img src="https://picsum.photos/id/42/400/260" alt="Members training">
+          <p>🧑‍🤝‍🧑 Our Community — Train Together, Win Together</p>
+        </div>
+        <div class="media-card video-card">
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4" target="_blank">
+            <img src="https://picsum.photos/id/64/400/240" alt="FitZone promo video">
+          </a>
+          <p>📹 FitZone Gym — Official Welcome Video</p>
+        </div>
+      </div>
+
+      <!-- Table 1 -->
+      <h2>📊 FitZone at a Glance</h2>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Category</th><th>Detail</th><th>Size / Count</th><th>Best For</th><th>Available</th>
+          </tr>
+          <tr><td>Cardio Zone</td><td>Treadmills, bikes, rowers</td><td>40 machines</td><td>Fat loss & endurance</td><td>All members</td></tr>
+          <tr><td>Free Weights</td><td>Dumbbells 2.5kg – 60kg</td><td>3 full racks</td><td>Strength & hypertrophy</td><td>All members</td></tr>
+          <tr><td>Group Classes</td><td>HIIT, Yoga, Zumba, Boxing</td><td>20+ weekly</td><td>Motivation & variety</td><td>Standard+</td></tr>
+          <tr><td>Swimming Pool</td><td>Olympic-size, heated</td><td>25 metres</td><td>Recovery & cardio</td><td>Premium+</td></tr>
+          <tr><td>Personal Training</td><td>1-on-1 certified coaches</td><td>12 trainers</td><td>Fast-tracked results</td><td>Premium+</td></tr>
+        </table>
+      </div>
+
+      <!-- Nested List -->
+      <h3>🏷️ FitZone Facilities — Full Overview</h3>
+      <ul class="nested-list">
+        <li>⚡ Training Zones
+          <ul>
+            <li>Free Weights Hall (3,000 sq ft)</li>
+            <li>Cardio Deck — 40 machines</li>
+            <li>Functional Training Rig</li>
+            <li>Turf Sprint Lane</li>
+          </ul>
+        </li>
+        <li>🏊 Recovery & Wellness
+          <ul>
+            <li>Heated Swimming Pool</li>
+            <li>Steam Room & Sauna</li>
+            <li>Ice Bath Recovery Station</li>
+            <li>Stretch & Mobility Zone</li>
+          </ul>
+        </li>
+        <li>🎯 Studio Classes
+          <ul>
+            <li>HIIT & Bootcamp Studio</li>
+            <li>Yoga & Pilates Room</li>
+            <li>Boxing Ring & Bags</li>
+            <li>Zumba & Dance Fitness</li>
+          </ul>
+        </li>
+        <li>🍎 Nutrition & Lifestyle
+          <ul>
+            <li>In-house Nutrition Bar</li>
+            <li>Meal Plan Consultation</li>
+            <li>Supplement Guidance</li>
+          </ul>
+        </li>
+        <li>🕰️ Convenience
+          <ul>
+            <li>Locker Rooms with Showers</li>
+            <li>Free Parking (200 spaces)</li>
+            <li>24/7 Access (Premium tier)</li>
+          </ul>
+        </li>
+      </ul>
+      <em>— Over 5 nested items showcasing FitZone's complete facility offering —</em>
+
+      <p><strong>📜 Paragraph 3:</strong> At FitZone, we believe that fitness is not a destination — it is a lifelong journey. Our coaches don't just count reps; they build confidence, discipline, and resilience. Every member who walks through our doors is treated as an athlete from day one.</p>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section-block red-section" id="about-section">
+    <div class="section-inner">
+      <h1>💪 About FitZone · Built for Champions</h1>
+
+      <p><strong>🔥 Our Story:</strong> FitZone was born out of a simple frustration — Nairobi deserved a gym that matched international standards without the international price tag. Our founders, former national athletes, built FitZone from the ground up, pouring every ounce of their athletic knowledge into the design of the facility and the philosophy of coaching.</p>
+
+      <div class="media-row">
+        <div class="media-card">
+          <img src="https://picsum.photos/id/22/300/200" alt="FitZone 2015 opening">
+          <p>🏆 FitZone Opening — 2015</p>
+        </div>
+        <div class="media-card">
+          <img src="https://picsum.photos/id/29/300/200" alt="Expanded facility 2019">
+          <p>⭐ Expanded Facility — 2019</p>
+        </div>
+        <div class="media-card">
+          <img src="https://picsum.photos/id/32/300/200" alt="FitZone 2024 state of the art">
+          <p>🏆 State-of-the-Art — 2024</p>
+        </div>
+        <div class="media-card video-card">
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4" target="_blank">
+            <img src="https://picsum.photos/id/104/400/240" alt="FitZone story video">
+          </a>
+          <p>💪 FitZone: The Full Story — Gym Tour & Vision (video)</p>
+        </div>
+      </div>
+
+      <h2>📋 FitZone Milestones</h2>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Year</th><th>Milestone</th><th>Members</th><th>New Feature</th>
+          </tr>
+          <tr><td>2015</td><td>Grand Opening — Westlands</td><td>200</td><td>Basic weights + cardio</td></tr>
+          <tr><td>2017</td><td>Group Classes Launch</td><td>800</td><td>HIIT & Yoga studios added</td></tr>
+          <tr><td>2019</td><td>Major Expansion</td><td>2,500</td><td>Pool, sauna, nutrition bar</td></tr>
+          <tr><td>2022</td><td>Premium Tier Launch</td><td>4,000</td><td>24/7 access + PT programs</td></tr>
+          <tr><td>2024</td><td>Best Gym in Nairobi Award</td><td>5,200+</td><td>Turf lane, boxing ring, ice bath</td></tr>
+        </table>
+      </div>
+
+      <p><strong>✨ Our Promise:</strong> FitZone isn't just a gym — it's a community. We have hosted marathons, corporate wellness days, charity fitness events, and national athlete training camps. We are proud to be Nairobi's home of fitness excellence.</p>
+    </div>
+  </section>
+
+  <!-- ===== CLASSES SECTION ===== -->
+  <section class="section-block blue-section" id="classes-section">
+    <div class="section-inner">
+      <h1>🔥 FitZone Classes · Find Your Fire</h1>
+
+      <p><strong>🎯 Class Philosophy:</strong> Every class at FitZone is designed with one goal: to push you beyond what you thought possible. Our instructors don't just lead — they inspire. With 20+ weekly classes across 6 disciplines, there is always something new to challenge your body and ignite your mind.</p>
+
+      <div class="media-row">
+        <div class="media-card">
+          <img src="https://picsum.photos/id/44/400/250" alt="HIIT class">
+          <p>🌟 HIIT Bootcamp — Maximum burn</p>
+        </div>
+        <div class="media-card">
+          <img src="https://picsum.photos/id/66/400/250" alt="Yoga class">
+          <p>🐐 Yoga & Pilates — Balance & strength</p>
+        </div>
+        <div class="media-card video-card">
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4" target="_blank">
+            <img src="https://picsum.photos/id/77/800/300" alt="Classes highlight video">
+          </a>
+          <p>🔥 FitZone Classes: Full Highlight Reel (video)</p>
+        </div>
+        <div class="media-card video-card">
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4" target="_blank">
+            <img src="https://picsum.photos/id/155/800/300" alt="Boxing class video">
+          </a>
+          <p>🥊 FitZone Boxing — Technique & Power (video)</p>
+        </div>
+      </div>
+
+      <h2>📋 Weekly Class Schedule</h2>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Class</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th><th>Trainer</th><th>Level</th>
+          </tr>
+          <tr><td>HIIT Bootcamp</td><td>6:00 AM</td><td>—</td><td>—</td><td>6:00 AM</td><td>6:00 AM</td><td>9:00 AM</td><td>—</td><td>Coach Mike</td><td>All levels</td></tr>
+          <tr><td>Yoga Flow</td><td>9:00 AM</td><td>—</td><td>9:00 AM</td><td>—</td><td>5:00 PM</td><td>—</td><td>10:00 AM</td><td>Coach Lisa</td><td>Beginner+</td></tr>
+          <tr><td>Spin Cycling</td><td>—</td><td>7:00 AM</td><td>6:00 AM</td><td>—</td><td>—</td><td>8:00 AM</td><td>—</td><td>Coach Sam</td><td>All levels</td></tr>
+          <tr><td>Boxing</td><td>—</td><td>5:00 PM</td><td>—</td><td>5:00 PM</td><td>—</td><td>10:00 AM</td><td>—</td><td>Coach Nia</td><td>Intermediate</td></tr>
+          <tr><td>Pilates</td><td>—</td><td>9:00 AM</td><td>5:00 PM</td><td>—</td><td>9:00 AM</td><td>—</td><td>—</td><td>Coach Lisa</td><td>All levels</td></tr>
+          <tr><td>Zumba</td><td>—</td><td>—</td><td>7:00 PM</td><td>—</td><td>7:00 PM</td><td>9:00 AM</td><td>—</td><td>Coach Amina</td><td>All levels</td></tr>
+          <tr><td>Strength & Power</td><td>5:00 PM</td><td>—</td><td>—</td><td>7:00 AM</td><td>—</td><td>—</td><td>—</td><td>Coach Brian</td><td>Advanced</td></tr>
+        </table>
+      </div>
+
+      <p><strong>🎗️ More than exercise:</strong> FitZone classes are social events. Members form friendships, accountability groups, and even business connections on the gym floor. Our classes are community-first, results-second — because when the community thrives, the results follow automatically.</p>
+    </div>
+  </section>
+
+  <!-- ===== TRAINERS SECTION ===== -->
+  <section class="section-block green-section" id="trainers-section">
+    <div class="section-inner">
+      <h1>⭐ Our Trainers · The Coaches Behind the Champions</h1>
+
+      <p><strong>🎓 World-Class Coaching:</strong> Every FitZone trainer holds internationally recognised certifications and brings real-world athletic experience. From former national athletes to competitive bodybuilders, our team of 12 coaches covers every fitness discipline with passion and expertise.</p>
+
+      <div class="media-row">
+        <div class="media-card">
+          <img src="https://picsum.photos/id/78/300/200" alt="Coach Mike">
+          <p>🏆 Coach Mike — Strength & HIIT</p>
+        </div>
+        <div class="media-card">
+          <img src="https://picsum.photos/id/80/300/200" alt="Coach Lisa">
+          <p>⚡ Coach Lisa — Yoga & Pilates</p>
+        </div>
+        <div class="media-card">
+          <img src="https://picsum.photos/id/90/300/200" alt="Coach Sam">
+          <p>🎽 Coach Sam — Cardio & Cycling</p>
+        </div>
+        <div class="media-card video-card">
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4" target="_blank">
+            <img src="https://picsum.photos/id/80/400/240" alt="Meet the trainers video">
+          </a>
+          <p>⭐ Meet the FitZone Trainers (video)</p>
+        </div>
+        <div class="media-card video-card">
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4" target="_blank">
+            <img src="https://picsum.photos/id/82/400/240" alt="Training methodology video">
+          </a>
+          <p>🏋️ FitZone Training Methodology — Science meets passion (video)</p>
+        </div>
+      </div>
+
+      <h2>📋 Trainer Profiles</h2>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Name</th><th>Speciality</th><th>Certification</th><th>Experience</th><th>Favourite Class</th><th>Personal Record</th>
+          </tr>
+          <tr><td>Coach Mike</td><td>Strength & HIIT</td><td>NSCA-CSCS</td><td>10 years</td><td>HIIT Bootcamp</td><td>Deadlift 250kg</td></tr>
+          <tr><td>Coach Lisa</td><td>Yoga & Pilates</td><td>RYT-500 Yoga Alliance</td><td>8 years</td><td>Morning Yoga Flow</td><td>Full splits at 40</td></tr>
+          <tr><td>Coach Sam</td><td>Cardio & Cycling</td><td>AFAA Group Fitness</td><td>7 years</td><td>Spin Cycling</td><td>120km cycle race</td></tr>
+          <tr><td>Coach Nia</td><td>Boxing & MMA</td><td>ACSM-CPT, Boxing Lvl 3</td><td>9 years</td><td>Boxing Circuits</td><td>National champion 2016</td></tr>
+          <tr><td>Coach Brian</td><td>Nutrition & Strength</td><td>Precision Nutrition L2</td><td>6 years</td><td>Strength & Power</td><td>Squat 220kg</td></tr>
+          <tr><td>Coach Amina</td><td>Zumba & Dance</td><td>Licensed Zumba Instructor</td><td>5 years</td><td>Zumba Party</td><td>1,200-calorie class</td></tr>
+        </table>
+      </div>
+
+      <p><strong>💫 Trainer Philosophy:</strong> Our trainers don't create dependency — they create independence. The goal is to teach you how your body works so you can train smarter for life. Every FitZone member graduates from their program knowing nutrition, recovery, and movement patterns that will serve them forever.</p>
+    </div>
+  </section>
+
+  <!-- ===== MEMBERSHIP SECTION ===== -->
+  <section class="section-block gold-section" id="membership-section">
+    <div class="section-inner">
+      <h1>🏅 Membership Plans · Invest in Yourself</h1>
+
+      <p><strong>💰 Flexible Plans:</strong> FitZone offers three membership tiers designed to meet every budget and lifestyle. Whether you are just starting out or you are a serious athlete, we have a plan that fits. All memberships include unlimited gym access during operating hours, towel service, and a free fitness assessment on joining.</p>
+
+      <div class="media-row">
+        <div class="media-card">
+          <img src="https://picsum.photos/id/100/400/240" alt="Basic membership">
+          <p>🏅 Basic Plan — Start your journey</p>
+        </div>
+        <div class="media-card">
+          <img src="https://picsum.photos/id/104/400/240" alt="Standard membership">
+          <p>🎩 Standard Plan — Most popular</p>
+        </div>
+        <div class="media-card video-card">
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4" target="_blank">
+            <img src="https://picsum.photos/id/106/800/250" alt="Membership tour video">
+          </a>
+          <p>🏅 FitZone Membership Tour — See what's included (video)</p>
+        </div>
+        <div class="media-card video-card">
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4" target="_blank">
+            <img src="https://picsum.photos/id/108/800/250" alt="Member testimonials">
+          </a>
+          <p>👑 Member Success Stories — Real results, real people (video)</p>
+        </div>
+      </div>
+
+      <h2>📊 Membership Comparison</h2>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Feature</th><th>Basic<br>KSh 2,500/mo</th><th>Standard<br>KSh 4,500/mo</th><th>Premium<br>KSh 7,500/mo</th><th>Annual<br>KSh 50,000/yr</th>
+          </tr>
+          <tr><td>Gym Floor Access</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Cardio Machines</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Free Weights</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Group Classes</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Swimming Pool</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Sauna & Steam</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Personal Trainer (4 sessions/mo)</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Nutrition Consultation</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td></tr>
+          <tr><td>24/7 Access</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Guest Passes</td><td>❌</td><td>2/month</td><td>4/month</td><td>Unlimited</td></tr>
+        </table>
+      </div>
+
+      <h3>🏷️ Membership Highlights — Nested Overview</h3>
+      <ul class="nested-list">
+        <li>🥇 Basic Plan — KSh 2,500/month
+          <ul>
+            <li>Full gym floor access (5am–10pm)</li>
+            <li>Cardio machines + free weights</li>
+            <li>Towel service included</li>
+            <li>Free joining fitness assessment</li>
+          </ul>
+        </li>
+        <li>🥈 Standard Plan — KSh 4,500/month
+          <ul>
+            <li>Everything in Basic</li>
+            <li>All 20+ weekly group classes</li>
+            <li>Swimming pool access</li>
+            <li>2 guest passes per month</li>
+            <li>Locker with lock</li>
+          </ul>
+        </li>
+        <li>🥇 Premium Plan — KSh 7,500/month
+          <ul>
+            <li>Everything in Standard</li>
+            <li>4 personal training sessions</li>
+            <li>Monthly nutrition consultation</li>
+            <li>Sauna, steam room, ice bath</li>
+            <li>24/7 gym access</li>
+            <li>Priority class booking</li>
+          </ul>
+        </li>
+        <li>🏆 Annual Plan — KSh 50,000/year
+          <ul>
+            <li>All Premium features</li>
+            <li>2 months free (save KSh 40,000)</li>
+            <li>Unlimited guest passes</li>
+            <li>Dedicated locker</li>
+          </ul>
+        </li>
+        <li>🎓 Corporate & Student Discounts
+          <ul>
+            <li>10% off for students (valid ID required)</li>
+            <li>Corporate group rates from 10 members</li>
+          </ul>
+        </li>
+      </ul>
+      <em>— Over 5 nested items detailing every membership benefit —</em>
+
+      <p><strong>🎖️ Sign-Up Bonus:</strong> Every new member receives a FitZone branded gym bag, 1 free personal training session, a body composition analysis, and 30 days access to our premium fitness app. Join today and take the first step toward the body and lifestyle you deserve.</p>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section class="section-block purple-section" id="gallery-section">
+    <div class="section-inner">
+      <h1>📸 Gallery · Life at FitZone</h1>
+
+      <p><strong>✍️ Paragraph 4:</strong> FitZone is alive. Every morning, the gym floor fills with energy — the clank of weights, the rhythm of music, coaches calling out encouragement, and members pushing through their limits together. These images and videos capture just a fraction of the FitZone experience.</p>
+
+      <p><strong>🌍 Paragraph 5:</strong> Our members come from all walks of life — doctors, students, athletes, grandmothers, CEOs. What unites every one of them is the decision to show up. FitZone has become a second home to thousands, and we are proud to document every milestone, transformation, and moment of triumph.</p>
+
+      <div class="media-row">
+        <div class="media-card video-card">
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4" target="_blank">
+            <img src="https://picsum.photos/id/145/400/220" alt="FitZone transformation video">
+          </a>
+          <p>📼 Member Transformations — Before & After (video)</p>
+        </div>
+        <div class="media-card video-card">
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4" target="_blank">
+            <img src="https://picsum.photos/id/147/400/220" alt="Gym tour video">
+          </a>
+          <p>🧵 Full Gym Tour — Every inch of FitZone (video)</p>
+        </div>
+      </div>
+
+      <div class="media-row">
+        <div class="media-card">
+          <img src="https://picsum.photos/id/145/300/180" alt="FitZone gym floor 2015">
+          <p>📸 Day One — 2015</p>
+        </div>
+        <div class="media-card">
+          <img src="https://picsum.photos/id/157/300/180" alt="FitZone group class">
+          <p>🧵 Group Class Energy</p>
+        </div>
+        <div class="media-card">
+          <img src="https://picsum.photos/id/162/300/180" alt="FitZone 2024 state of the art">
+          <p>⚡ FitZone 2024 Edition</p>
+        </div>
+        <div class="media-card">
+          <img src="https://picsum.photos/id/26/300/180" alt="FitZone weights section">
+          <p>🏋️ Premium Weights Floor</p>
+        </div>
+        <div class="media-card">
+          <img src="https://picsum.photos/id/20/300/180" alt="Cardio machines">
+          <p>🏃 Cardio Zone</p>
+        </div>
+        <div class="media-card">
+          <img src="https://picsum.photos/id/42/300/180" alt="Community members">
+          <p>🤝 The FitZone Community</p>
+        </div>
+      </div>
+
+      <div class="media-row">
+        <div class="media-card video-card wide-card">
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4" target="_blank">
+            <img src="https://picsum.photos/id/150/800/300" alt="FitZone annual championships">
+          </a>
+          <p>🏆 FitZone Annual Fitness Championship — Highlights Reel (video)</p>
+        </div>
+      </div>
+
+      <h3>🏛️ FitZone Iconic Moments (5+ Highlights)</h3>
+      <ul class="nested-list">
+        <li>🏆 2018 — First Member Marathon Team
+          <ul>
+            <li>32 FitZone members ran Nairobi Marathon</li>
+            <li>Youngest member was 19, oldest was 61</li>
+          </ul>
+        </li>
+        <li>💪 2019 — Pool Opening Ceremony
+          <ul>
+            <li>Free swim day for all 2,500 members</li>
+            <li>200 children from local schools invited</li>
+          </ul>
+        </li>
+        <li>🥇 2022 — Best Gym Nomination (Kenya Fitness Awards)
+          <ul>
+            <li>Voted by over 10,000 public participants</li>
+            <li>Won Best Community Gym category</li>
+          </ul>
+        </li>
+        <li>🌍 2023 — Corporate Wellness Partnership
+          <ul>
+            <li>Partnered with 15 Nairobi companies</li>
+            <li>500+ employees joined on corporate packages</li>
+          </ul>
+        </li>
+        <li>⚡ 2024 — Turf Lane & Boxing Ring Launch
+          <ul>
+            <li>Brand new sprint turf and boxing setup</li>
+            <li>Hosted first amateur boxing night</li>
+          </ul>
+        </li>
+        <li>🎓 2025 — FitZone Academy Launch
+          <ul>
+            <li>Personal trainer certification program started</li>
+            <li>First cohort of 20 graduates</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section-block dark-section" id="contact-section">
+    <div class="section-inner">
+      <h1>📞 Contact FitZone · We Are Here For You</h1>
+
+      <p><strong>📍 Find Us:</strong> FitZone is located at the heart of Westlands, Nairobi, easily accessible from all major routes. We have 200 free parking spaces, and we are served by multiple matatu routes. Our reception team is on-site 7 days a week.</p>
+
+      <div class="media-row">
+        <div class="media-card">
+          <img src="https://picsum.photos/id/100/400/240" alt="FitZone entrance">
+          <p>🏢 FitZone Main Entrance — Westlands</p>
+        </div>
+        <div class="media-card">
+          <img src="https://picsum.photos/id/104/400/240" alt="Reception area">
+          <p>🛎️ Reception & Welcome Desk</p>
+        </div>
+        <div class="media-card video-card">
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4" target="_blank">
+            <img src="https://picsum.photos/id/106/800/250" alt="How to find us video">
+          </a>
+          <p>📍 How to Find FitZone — Location Guide (video)</p>
+        </div>
+      </div>
+
+      <!-- Contact Table -->
+      <h2>📋 Contact & Opening Hours</h2>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Channel</th><th>Detail</th><th>Mon–Fri</th><th>Saturday</th><th>Sunday</th><th>Response Time</th>
+          </tr>
+          <tr><td>📞 Phone</td><td>+254 700 000 000</td><td>5am – 10pm</td><td>8am – 8pm</td><td>8am – 6pm</td><td>Immediate</td></tr>
+          <tr><td>✉️ Email</td><td>info@fitzone.co.ke</td><td>24 hours</td><td>24 hours</td><td>24 hours</td><td>Within 2 hours</td></tr>
+          <tr><td>📸 Instagram</td><td>@fitzoneNairobi</td><td>24 hours</td><td>24 hours</td><td>24 hours</td><td>Within 4 hours</td></tr>
+          <tr><td>📘 Facebook</td><td>/FitZoneGymNairobi</td><td>24 hours</td><td>24 hours</td><td>24 hours</td><td>Same day</td></tr>
+          <tr><td>🏢 Walk-In</td><td>123 Fitness Ave, Westlands</td><td>5am – 10pm</td><td>8am – 8pm</td><td>8am – 6pm</td><td>Immediate</td></tr>
+        </table>
+      </div>
+
+      <!-- Contact form -->
+      <h2>✉️ Send Us a Message</h2>
+      <div class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="How can we help you today?">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Tell us about your fitness goals or ask any question..."></textarea>
+        </div>
+        <button type="button" onclick="alert('Message sent! We will be in touch within 2 hours.')">Send Message 🚀</button>
+      </div>
+
+      <p><strong>🎖️ Final Note:</strong> FitZone exists because of our members. Every piece of equipment purchased, every class launched, and every facility improvement has been driven by your feedback and your trust. Thank you for choosing FitZone — your transformation is our greatest achievement.</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p>© 2026 FitZone Gym — Nairobi's Premium Fitness Centre | Weights · Cardio · Classes · Pool · Nutrition</p>
+    <p>⚡ "The body achieves what the mind believes — and at FitZone, we believe in you." ⚡</p>
+    <p>💪 5,200+ members • 12 expert trainers • 20+ weekly classes • 24/7 Premium access</p>
+  </footer>
 
 </body>
 </html>
