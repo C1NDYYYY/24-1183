@@ -1,11 +1,12 @@
+
 /* ===================================================
-   FitZone Gym — style.css
-   Styled to match Jersey Heritage reference site
+   FitZone Gym — FULL FINAL CSS (Commercial Grade)
+   Includes: Jersey-style UI + YouTube support
    =================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
-/* ---- RESET & BASE ---- */
+/* ---- RESET ---- */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -20,7 +21,10 @@ body {
   background: #f4f0eb;
 }
 
-/* ---- NAVBAR ---- */
+/* ===================================================
+   NAVBAR
+=================================================== */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -49,15 +53,13 @@ body {
   color: white;
 }
 
-/* ---- HERO SECTION ---- */
+/* ===================================================
+   HERO
+=================================================== */
+
 .hero {
   background: linear-gradient(160deg, #0d0d0d 0%, #1a0a0a 50%, #0d0d0d 100%);
   color: #f0f0f0;
-  padding: 0;
-}
-
-.hero .section-inner {
-  border-left: 6px solid #e94560;
 }
 
 .hero h1 {
@@ -77,7 +79,10 @@ body {
   color: #aaa;
 }
 
-/* ---- SECTION BLOCKS ---- */
+/* ===================================================
+   SECTION BASE
+=================================================== */
+
 .section-block {
   padding: 0;
 }
@@ -89,94 +94,72 @@ body {
   border-left: 6px solid currentColor;
 }
 
-/* RED / ABOUT */
+/* ===================================================
+   COLOR THEMES
+=================================================== */
+
 .red-section {
   background: #fff8f6;
   color: #222;
 }
-.red-section .section-inner {
-  border-left-color: #e94560;
-}
+.red-section .section-inner { border-left-color: #e94560; }
 .red-section h1 { color: #e94560; }
-.red-section h2 { color: #c0392b; }
 
-/* BLUE / CLASSES */
 .blue-section {
   background: #f0f4ff;
   color: #222;
 }
-.blue-section .section-inner {
-  border-left-color: #2e5ce6;
-}
+.blue-section .section-inner { border-left-color: #2e5ce6; }
 .blue-section h1 { color: #2e5ce6; }
-.blue-section h2 { color: #1a3baa; }
 
-/* GREEN / TRAINERS */
 .green-section {
   background: #f0fff6;
   color: #222;
 }
-.green-section .section-inner {
-  border-left-color: #22c55e;
-}
+.green-section .section-inner { border-left-color: #22c55e; }
 .green-section h1 { color: #16a34a; }
-.green-section h2 { color: #15803d; }
 
-/* GOLD / MEMBERSHIP */
 .gold-section {
   background: #fffbf0;
   color: #222;
 }
-.gold-section .section-inner {
-  border-left-color: #f59e0b;
-}
+.gold-section .section-inner { border-left-color: #f59e0b; }
 .gold-section h1 { color: #b45309; }
-.gold-section h2 { color: #92400e; }
 
-/* PURPLE / GALLERY */
 .purple-section {
   background: #faf0ff;
   color: #222;
 }
-.purple-section .section-inner {
-  border-left-color: #9333ea;
-}
+.purple-section .section-inner { border-left-color: #9333ea; }
 .purple-section h1 { color: #7c3aed; }
-.purple-section h2 { color: #6d28d9; }
 
-/* DARK / CONTACT */
 .dark-section {
   background: #111;
   color: #f0f0f0;
 }
-.dark-section .section-inner {
-  border-left-color: #e94560;
-}
+.dark-section .section-inner { border-left-color: #e94560; }
 .dark-section h1 { color: #e94560; }
-.dark-section h2 { color: #ff8c61; }
-.dark-section h3 { color: #ffd166; }
-.dark-section p { color: #ccc; }
 
-/* ---- HEADINGS ---- */
+/* ===================================================
+   TYPOGRAPHY
+=================================================== */
+
 h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.8rem;
   letter-spacing: 2px;
   margin-bottom: 20px;
-  line-height: 1.1;
 }
 
 h2 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.9rem;
-  letter-spacing: 1.5px;
   margin: 35px 0 15px;
 }
 
 h3 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.4rem;
-  letter-spacing: 1px;
   margin: 30px 0 12px;
 }
 
@@ -185,21 +168,15 @@ p {
   font-size: 15.5px;
 }
 
-em {
-  font-style: italic;
-  font-size: 14px;
-  display: block;
-  margin: 8px 0 20px;
-  opacity: 0.75;
-}
+/* ===================================================
+   MEDIA GRID (IMAGES + VIDEOS)
+=================================================== */
 
-/* ---- MEDIA ROW (images + videos) ---- */
 .media-row {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   margin: 25px 0;
-  align-items: flex-start;
 }
 
 .media-card {
@@ -210,55 +187,47 @@ em {
 
 .media-card img {
   width: 100%;
-  height: auto;
   border-radius: 6px;
-  display: block;
   border: 3px solid rgba(0,0,0,0.12);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .media-card img:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
 .media-card p {
   font-size: 13px;
   margin-top: 7px;
-  font-style: italic;
   opacity: 0.8;
-  margin-bottom: 0;
 }
 
-/* Video cards — show a play overlay hint */
-.video-card img {
-  cursor: pointer;
-  position: relative;
+/* ===================================================
+   🎥 YOUTUBE VIDEO SUPPORT (IMPORTANT ADDITION)
+=================================================== */
+
+.video-card iframe {
+  width: 100%;
+  height: 220px;
+  border-radius: 8px;
+  border: 3px solid rgba(0,0,0,0.15);
+  transition: transform 0.25s, box-shadow 0.25s;
 }
 
-.video-card a {
-  display: block;
-  position: relative;
+.video-card iframe:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
-.video-card a::after {
-  content: '▶';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 36px;
-  color: white;
-  text-shadow: 0 0 20px rgba(0,0,0,0.8);
-  pointer-events: none;
+.video-card {
+  overflow: hidden;
 }
 
-.wide-card {
-  flex: 1 1 100%;
-  max-width: 100%;
-}
+/* ===================================================
+   TABLES
+=================================================== */
 
-/* ---- TABLES ---- */
 .table-wrap {
   overflow-x: auto;
   margin: 15px 0 25px;
@@ -275,194 +244,77 @@ th {
   background-color: #222;
   color: white;
   padding: 11px 14px;
-  text-align: left;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 15px;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
 }
 
 td {
   border: 1px solid #ddd;
   padding: 9px 14px;
-  vertical-align: middle;
 }
 
 tr:nth-child(even) td {
   background-color: #f7f7f7;
 }
 
-tr:hover td {
-  background-color: #fff3cd;
-  transition: background 0.15s;
-}
+/* ===================================================
+   NESTED LISTS
+=================================================== */
 
-/* Dark section table override */
-.dark-section th {
-  background-color: #e94560;
-}
-.dark-section td {
-  border-color: #333;
-  background-color: #1a1a1a;
-  color: #ddd;
-}
-.dark-section tr:nth-child(even) td {
-  background-color: #222;
-}
-.dark-section tr:hover td {
-  background-color: #2a1a1a;
-}
-
-/* ---- NESTED LISTS ---- */
 .nested-list {
   margin: 15px 0 10px 20px;
   line-height: 2.2;
 }
 
-.nested-list > li {
-  font-weight: 700;
-  font-size: 15.5px;
-  margin-top: 8px;
-}
+/* ===================================================
+   CONTACT FORM
+=================================================== */
 
-.nested-list ul {
-  margin: 2px 0 4px 24px;
-  list-style: circle;
-}
-
-.nested-list ul li {
-  font-weight: 400;
-  font-size: 14.5px;
-}
-
-/* Dark section list override */
-.dark-section .nested-list > li {
-  color: #ffd166;
-}
-.dark-section .nested-list ul li {
-  color: #ccc;
-}
-
-/* Hero section list override */
-.hero .nested-list > li {
-  color: #ff8c61;
-}
-.hero .nested-list ul li {
-  color: #ccc;
-}
-
-/* ---- CONTACT FORM ---- */
 .contact-form {
   background: #1a1a1a;
-  border: 1px solid #333;
-  border-left: 4px solid #e94560;
   padding: 30px;
+  border-left: 4px solid #e94560;
   border-radius: 8px;
-  margin: 20px 0 30px;
   max-width: 700px;
-}
-
-.form-row {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.form-group {
-  flex: 1;
-  min-width: 200px;
-  margin-bottom: 18px;
-}
-
-.form-group label {
-  display: block;
-  color: #e94560;
-  font-weight: 700;
-  font-size: 14px;
-  margin-bottom: 6px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 10px 14px;
+  padding: 10px;
   background: #0d0d0d;
+  color: white;
   border: 1px solid #444;
   border-radius: 5px;
-  color: #f0f0f0;
-  font-family: 'Barlow', sans-serif;
-  font-size: 14px;
-  transition: border-color 0.2s;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #e94560;
-}
+/* ===================================================
+   FOOTER
+=================================================== */
 
-.contact-form button {
-  background: #e94560;
-  color: white;
-  border: none;
-  padding: 13px 32px;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 18px;
-  letter-spacing: 1px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
-}
-
-.contact-form button:hover {
-  background: #c0392b;
-  transform: translateY(-2px);
-}
-
-/* ---- FOOTER ---- */
 .site-footer {
   background: #0a0a0a;
   color: #888;
   text-align: center;
-  padding: 30px 20px;
+  padding: 30px;
   border-top: 4px solid #e94560;
-  font-size: 13.5px;
-  line-height: 2;
 }
 
-.site-footer p:first-child {
-  color: #ccc;
-  font-size: 14px;
-}
+/* ===================================================
+   RESPONSIVE
+=================================================== */
 
-/* ---- RESPONSIVE ---- */
 @media (max-width: 768px) {
-  .section-inner {
-    padding: 35px 20px;
-  }
 
   h1 {
     font-size: 2rem;
   }
 
+  .media-card {
+    flex: 1 1 100%;
+  }
+
   .navbar {
-    gap: 2px;
     padding: 8px 10px;
   }
 
-  .navbar a {
-    font-size: 14px;
-    padding: 5px 8px;
-  }
-
-  .media-card {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .form-row {
-    flex-direction: column;
-  }
 }
